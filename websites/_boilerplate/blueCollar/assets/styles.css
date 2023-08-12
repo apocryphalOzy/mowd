@@ -494,7 +494,7 @@
   .container-footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background: gray;
+    background: var(--secondary);
   }
 
   .right-section-footer{
@@ -508,6 +508,7 @@
 
   .h2-footer{
     margin-right: 2em;
+    border-bottom:#ffba19 .15rem solid;
   }
 
   ul li{
@@ -518,11 +519,12 @@
   .credit-footer{
     display: flex;
     justify-content: center;
-    background: gray;
+    background: var(--secondary)
   }
 
   .credit-footer span{
     padding: 0px 5px 0px 5px;
+    color:#fafbfc;
   }
 
   .credit-footer a{
