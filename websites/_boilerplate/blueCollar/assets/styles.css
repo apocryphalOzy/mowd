@@ -342,3 +342,31 @@
   [hidden] {
     display: none;
   }
+
+  .footer{
+    display: block;
+  }
+
+  .container-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: gray;
+  }
+
+  .right-section-footer{
+    grid-column-start: 3;
+  }
+
+  .lists-footer{
+    display: flex;
+    float: left;
+  }
+
+  ul li{
+    list-style: none;
+    margin-bottom: .75rem;
+  }
+
+  .credit-footer{
+    
+  }
