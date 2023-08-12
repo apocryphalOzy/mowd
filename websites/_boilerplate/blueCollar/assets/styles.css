@@ -343,6 +343,23 @@
     display: none;
   }
 
+  /* ============================================ */
+  /*         CSS Reset and Root Variables         */
+  /* ============================================ */
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  li, a, button {
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+  }
+
   :root {
     --primary: #ffba19;
     --primaryLight: #ffd675;
@@ -362,24 +379,11 @@
   /* ============================================ */
 
 
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  li, a, button {
-    font-family: "Roboto","Arial",sans-serif;
-    font-size: 16px;
-    color: white;
-    text-decoration: none;
-  }
-
-.header {
+  .header {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    padding: 10px 10%;
+    align-items: baseline;
+    padding: 0 10%;
     background-color: var(--secondary);
   }
 
@@ -397,31 +401,19 @@
     padding: 0 20px;
   }
 
-  .nav__link li a {
-    transition: all 0.3s ease 0s;
-  }
-
-  .nav__link li a:hover{
-    color: var(--primary);
-  }
+  /* nav button animation */
 
   .nav__button {
-    margin-left: 20px;
-    margin-bottom: 10px;
-    font-weight: bolder;
-    padding: 9px 25px;
     background-color: var(--primary);
     color: var(--headerColor);
+    font-weight: bolder;
+    padding: 9px 25px;
+    margin-left: 20px;
+    margin-bottom: 10px;
     border: none;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
-    text-transform: uppercase;
+    position: relative;
   }
-
-  /* .nav__button:hover {
-    background-color: var(--headerColor);
-    color: var(--bodyTextColorWhite);
-  } */
 
   .nav__button.nav__button__slide::before {
     content: "";
@@ -432,17 +424,54 @@
     right: 0;
     z-index: -1;
     background-color: var(--headerColor);
-
-    transition: transform 200ms ease-in-out;
+    transition: transform 300ms ease-in-out;
     transform: scaleX(0);
     transform-origin: left;
+  }
+
+  .nav__button.nav__button__slide {
+    transition: color 300ms ease-in-out;
+    z-index: 1;
   }
 
   .nav__button.nav__button__slide:hover::before,
   .nav__button.nav__button__slide:focus::before {
     transform: scaleX(1);
   }
-   /* ============================================  */
+
+  .nav__button.nav__button__slide:hover,
+  .nav__button.nav__button__slide:focus {
+    color: var(--bodyTextColorWhite);
+  }  
+
+  /* nav link animation */
+  
+  .nav__link {
+    position: relative;
+    padding-bottom: 0.25rem;
+    display: inline-block;
+  }
+
+  .nav__link.nav__link__underline::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: var(--primary);
+    transition: transform 200ms ease-in-out;
+    transform-origin: left;
+
+    transform: scaleX(0);
+  }
+  
+  .nav__link.nav__link__underline:hover::before,
+  .nav__link.nav__link__underline:focus::before {
+    transform: scaleX(1);
+  }
+
+  /* ============================================  */
    /*                  Footer                       */
    /* ============================================  */
   
