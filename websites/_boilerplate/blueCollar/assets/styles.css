@@ -342,3 +342,83 @@
   [hidden] {
     display: none;
   }
+
+  :root {
+    --primary: #ffba19;
+    --primaryLight: #ffd675;
+    --secondary: #001f3f;
+    --secondaryLight: #001f3f;
+    --headerColor: #1a1a1a;
+    --bodyTextColor: #4e4b66;
+    --bodyTextColorWhite: #fafbfc;
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --bodyFontSize: 1rem;
+    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+}
+
+  /* ============================================ */
+  /*                 Navigation                   */
+  /* ============================================ */
+
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  li, a, button {
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+  }
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: var(--secondary);
+  }
+
+  .nav__logo {
+    cursor: pointer;
+    margin-right: auto;
+  }
+
+  .nav__list {
+    list-style: none;
+  }
+
+  .nav__list li {
+    display: inline-block;
+    padding: 0 20px;
+  }
+
+  .nav__link li a {
+    transition: all 0.3s ease 0s;
+  }
+
+  .nav__link li a:hover{
+    color: var(--primary);
+  }
+
+  .nav__button {
+    padding: 9px 25px;
+    background-color: var(--primary);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    text-transform: uppercase;
+  }
+
+  .nav__button:hover {
+    background-color: var(--headerColor);
+    color: var(--bodyTextColorWhite);
+  }
+
+  
+
+  
