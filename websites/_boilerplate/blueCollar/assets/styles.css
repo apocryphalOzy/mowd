@@ -513,3 +513,9 @@
   .credit-footer a{
     color:green
   }
+
+  .logo-footer img{
+    width:25%;
+    height:auto;
+    /* transform: scale(2.5em); */
+  }
