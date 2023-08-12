@@ -6,7 +6,6 @@
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
-    min-height: 100vh;
   }
   
   /* Sections
@@ -383,14 +382,19 @@
   .header {
     display: flex;
     justify-content: flex-end;
-    align-items: baseline;
-    padding: 0 10%;
+    align-items: center;
+    padding: 10px 20% 0 20%;
     background-color: var(--secondary);
   }
 
   .nav__logo {
     cursor: pointer;
     margin-right: auto;
+  }
+
+  .temp__logo {
+    margin-top: 10px;
+    letter-spacing: .05em;
   }
 
   .nav__list {
@@ -407,8 +411,9 @@
   .nav__button {
     background-color: var(--primary);
     color: var(--headerColor);
+    text-transform: uppercase;
     font-weight: bolder;
-    padding: 9px 25px;
+    padding: 15px 25px;
     margin-left: 20px;
     margin-bottom: 10px;
     border: none;
@@ -424,7 +429,7 @@
     bottom: 0;
     right: 0;
     z-index: -1;
-    background-color: var(--headerColor);
+    background-color: black;
     transition: transform 300ms ease-in-out;
     transform: scaleX(0);
     transform-origin: left;
