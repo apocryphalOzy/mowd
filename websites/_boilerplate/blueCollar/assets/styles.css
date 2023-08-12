@@ -510,17 +510,25 @@
     margin-bottom: .75rem;
   }
 
-  .credit-footer > *{
+  .credit-footer{
     display: flex;
     justify-content: center;
+    background: gray;
+  }
+
+  .credit-footer span{
+    padding: 0px 5px 0px 5px;
   }
 
   .credit-footer a{
     color:green
   }
 
+  .left-section-footer{
+    margin-left: 10em;
+  }
+
   .logo-footer img{
-    width:25%;
-    height:auto;
-    /* transform: scale(2.5em); */
+    width:75%;
+    height:fit-content
   }
