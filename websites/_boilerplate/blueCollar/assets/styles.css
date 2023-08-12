@@ -466,11 +466,20 @@
     float: left;
   }
 
+  .h2-footer{
+    margin-right: 2em;
+  }
+
   ul li{
     list-style: none;
     margin-bottom: .75rem;
   }
 
-  .credit-footer{
+  .credit-footer > *{
+    display: flex;
+    justify-content: center;
+  }
 
+  .credit-footer a{
+    color:green
   }
