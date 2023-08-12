@@ -383,7 +383,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px 20% 0 20%;
+    padding: 0 20% 0 20%;
     background-color: var(--secondary);
   }
 
@@ -392,11 +392,16 @@
     margin-right: auto;
   }
 
-  .temp__logo {
+  /* .temp__logo {
     margin-top: 10px;
     letter-spacing: .05em;
-  }
+  } */
 
+  .logo {
+    width: 400px;
+    height: 90px;
+
+  }
   .nav__list {
     list-style: none;
   }
