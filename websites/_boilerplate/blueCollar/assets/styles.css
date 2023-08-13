@@ -539,3 +539,36 @@
     width:75%;
     height:fit-content
   }
+
+  .lists-footer ul a{
+    display: inline-block;
+    position: relative;
+    padding: 0.2em 0;
+    transition: .2s ease-in;
+    
+  }
+
+  .lists-footer a:hover{
+    color: var(--primary);
+    
+  }
+
+  .footer__link_.footer__link__underline::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: var(--primary);
+    transition: transform 200ms ease-in-out;
+    transform-origin: left;
+
+    transform: scaleX(0);
+  }
+  
+  .footer__link_.footer__link__underline:hover::before,
+  .footer__link_.footer__link__underline:focus::before {
+    transform: scaleX(1);
+  }
+
