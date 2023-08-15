@@ -361,6 +361,10 @@
   }
 
   :root {
+    --dark: #082032;
+    --medium: #2c394b;
+    --accent: #334756;
+
     --primary: #ffba19;
     --primaryLight: #ffd675;
     --secondary: #001f3f;
@@ -378,49 +382,59 @@
   /*                 Navigation                   */
   /* ============================================ */
 
-
-  .header {
+  /* NAVBAR */
+  .navbar__container {
+    background-color: var(--dark);
+    color: var(--bodyTextColorWhite);
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around; 
     align-items: center;
-    padding: 0 20% 0 20%;
-    background-color: var(--secondary);
+    padding: 10px 20px;
+    box-shadow: rgba(149,157,165,.2) 0px 8px 24px;
   }
-
+  
   .nav__logo {
+    font-size: 24px;
+    font-weight: bold;
     cursor: pointer;
-    margin-right: auto;
   }
 
-  /* .temp__logo {
-    margin-top: 10px;
-    letter-spacing: .05em;
-  } */
-
-  .logo {
-    width: 400px;
-    height: 90px;
-
-  }
+  
   .nav__list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
-
+  
   .nav__list li {
-    display: inline-block;
-    padding: 0 20px;
+    margin: 0;
+  }
+  
+  .nav__list .nav-item {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px 0 10px;
+  }
+  
+  .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    margin-left: auto; 
+  
   }
 
-  /* nav button animation */
-
-  .nav__button {
+   /* NAV LINK ANIMATIONS */
+   .nav__button {
     background-color: var(--primary);
     color: var(--headerColor);
     text-transform: uppercase;
     font-weight: bolder;
     padding: 15px 25px;
     margin-left: 20px;
-    margin-bottom: 10px;
     border: none;
     cursor: pointer;
     position: relative;
@@ -455,12 +469,16 @@
     color: var(--bodyTextColorWhite);
   }  
 
-  /* nav link animation */
   
   .nav__link {
     position: relative;
     padding-bottom: 0.25rem;
     display: inline-block;
+    transition: color 0.3s ease;
+  }
+
+  .nav__link:hover {
+    color: var(--primary);
   }
 
   .nav__link.nav__link__underline::before {
@@ -471,20 +489,58 @@
     bottom: 0;
     height: 2px;
     background-color: var(--primary);
-    transition: transform 200ms ease-in-out;
-    transform-origin: left;
+    color: var(--primary);
 
+    transition: transform 300ms ease-in-out;
+    transform-origin: left;
     transform: scaleX(0);
   }
-  
+
   .nav__link.nav__link__underline:hover::before,
   .nav__link.nav__link__underline:focus::before {
     transform: scaleX(1);
+  } 
+
+  
+  
+  /* MOBILE RESPONSIVE NAV */
+  @media screen and (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+  
+    .navbar__container {
+      justify-content: space-between; 
+  
+      align-items: center;
+    }
+  
+    .nav__list {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      background-color: #333;
+      width: 100%;
+      top: 60px;
+      left: 0;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in;
+    }
+  
+    .nav__list.active {
+      transform: translateX(0);
+    }
+  
+    .nav__list li {
+      width: 100%;
+      text-align: center;
+    }
   }
 
-  /* ============================================  */
-   /*                  Footer                       */
-   /* ============================================  */
+
+  /* ============================================   */
+  /*                  Footer                        */
+  /* ============================================   */
   
 
   .footer{
@@ -510,6 +566,7 @@
     margin-right: 2em;
   }
 
+  /* WTF IS THIS JEREMY  - TARGET YOUR SHIT ONLY NOT ALL ELEMENTS*/
   ul li{
     list-style: none;
     margin-bottom: .75rem;
