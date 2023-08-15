@@ -550,7 +550,7 @@
   .container-footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background: gray;
+    background: var(--secondary);
   }
 
   .right-section-footer{
@@ -564,6 +564,7 @@
 
   .h2-footer{
     margin-right: 2em;
+    border-bottom:#ffba19 .15rem solid;
   }
 
   /* WTF IS THIS JEREMY  - TARGET YOUR SHIT ONLY NOT ALL ELEMENTS*/
@@ -572,17 +573,59 @@
     margin-bottom: .75rem;
   }
 
-  .credit-footer > *{
+  .credit-footer{
     display: flex;
     justify-content: center;
+    background: var(--secondary)
+  }
+
+  .credit-footer span{
+    padding: 0px 5px 0px 5px;
+    color:#fafbfc;
   }
 
   .credit-footer a{
     color:green
   }
 
-  .logo-footer img{
-    width:25%;
-    height:auto;
-    /* transform: scale(2.5em); */
+  .left-section-footer{
+    margin-left: 10em;
   }
+
+  .logo-footer img{
+    width:75%;
+    height:fit-content
+  }
+
+  .lists-footer ul a{
+    display: inline-block;
+    position: relative;
+    padding: 0.2em 0;
+    transition: .2s ease-in;
+    
+  }
+
+  .lists-footer a:hover{
+    color: var(--primary);
+    
+  }
+
+  .footer__link_.footer__link__underline::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: var(--primary);
+    transition: transform 200ms ease-in-out;
+    transform-origin: left;
+
+    transform: scaleX(0);
+  }
+  
+  .footer__link_.footer__link__underline:hover::before,
+  .footer__link_.footer__link__underline:focus::before {
+    transform: scaleX(1);
+  }
+
