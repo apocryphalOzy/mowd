@@ -391,12 +391,14 @@
     align-items: center;
     padding: 10px 20px;
     box-shadow: rgba(149,157,165,.2) 0px 8px 24px;
+    z-index: 10000;
   }
   
   .nav__logo {
-    font-size: 24px;
+    font-size: 40px;
     font-weight: bold;
     cursor: pointer;
+    color: var(--bodyTextColorWhite);
   }
 
   
@@ -427,7 +429,7 @@
   
   }
 
-   /* NAV LINK ANIMATIONS */
+   /* NAV BUTTON ANIMATION */
    .nav__button {
     background-color: var(--primary);
     color: var(--headerColor);
@@ -469,16 +471,12 @@
     color: var(--bodyTextColorWhite);
   }  
 
-  
+  /* NAV LINK ANIMATION */
   .nav__link {
     position: relative;
     padding-bottom: 0.25rem;
     display: inline-block;
     transition: color 0.3s ease;
-  }
-
-  .nav__link:hover {
-    color: var(--primary);
   }
 
   .nav__link.nav__link__underline::before {
@@ -488,7 +486,7 @@
     left: 0;
     bottom: 0;
     height: 2px;
-    background-color: var(--primary);
+    background-color: var(--primaryLight);
     color: var(--primary);
 
     transition: transform 300ms ease-in-out;
@@ -543,7 +541,149 @@
   /* ============================================   */
   
 
-  .footer{
+  /* FOOTER LAYOUT */
+  .footer {
+    background-color: var(--dark);
+    padding: 80px 0 20px 0
+  }
+
+  .footer__logo {
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--bodyTextColorWhite);
+    padding-left: .88em;
+  }
+
+  .container-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 96%;
+    max-width: 82.5rem;
+    margin: auto;
+    padding: 0;
+  }
+
+  .right-section-footer {
+    margin: 0;
+    width: 38.0625rem;
+    max-width: none;
+  }
+
+  .left-section-footer {
+    width: 25.5625rem;
+    margin: 0;
+    text-align: left;
+  }
+
+  .lists-footer {
+    width: 96%;
+    max-width: 48.0625rem;
+    margin: 0;
+    max-width: initial;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .lists-footer::before::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .lists-footer li {
+    list-style: none;
+    margin: .6em 0 .6em 0;
+  }
+
+
+  /* CREDIT FOOTER */
+  .credit-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+
+  .credit-footer span{
+    padding: 0px 5px 0px 5px;
+    color:#fafbfc;
+  }
+
+  .credit-footer a{
+    color: var(--primary)
+  }
+
+  .credit-footer a:hover{
+    color: var(--primary);
+    text-decoration: underline;
+  }
+
+  /* FOOTER TITLE */
+
+  .h2-footer {
+    text-transform: uppercase;
+    font-size: 1em;
+    color: #fff;
+    font-size: 1.125rem;
+    line-height: 21/18em;
+    margin-bottom: 2.3125rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+  }
+  
+
+  .h2-footer::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 0.125rem;
+    width: 6.0625rem;
+    background: var(--primary);
+    opacity: 1;
+    bottom: -1rem;
+    left: 0;
+  }
+
+
+  /* FOOTER LINK ANIMATION */
+  .lists-footer ul a{
+    display: inline-block;
+    position: relative;
+    padding: 0.2em 0;
+    transition: .3s ease-in;
+    
+  }
+
+  .lists-footer a:hover{
+    color: var(--primary);
+    
+  }
+
+  .footer__link_.footer__link__underline::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: var(--primary);
+    transition: transform 300ms ease-in-out;
+    transform-origin: left;
+
+    transform: scaleX(0);
+  }
+  
+  .footer__link_.footer__link__underline:hover::before,
+  .footer__link_.footer__link__underline:focus::before {
+    transform: scaleX(1);
+  } 
+ 
+  
+  /* Js footer css */
+  /* .footer{
     display: block;
   }
 
@@ -567,7 +707,6 @@
     border-bottom:#ffba19 .15rem solid;
   }
 
-  /* WTF IS THIS JEREMY  - TARGET YOUR SHIT ONLY NOT ALL ELEMENTS*/
   ul li{
     list-style: none;
     margin-bottom: .75rem;
@@ -601,31 +740,6 @@
     display: inline-block;
     position: relative;
     padding: 0.2em 0;
-    transition: .2s ease-in;
+    transition: .3s ease-in;
     
   }
-
-  .lists-footer a:hover{
-    color: var(--primary);
-    
-  }
-
-  .footer__link_.footer__link__underline::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    background-color: var(--primary);
-    transition: transform 200ms ease-in-out;
-    transform-origin: left;
-
-    transform: scaleX(0);
-  }
-  
-  .footer__link_.footer__link__underline:hover::before,
-  .footer__link_.footer__link__underline:focus::before {
-    transform: scaleX(1);
-  }
-
