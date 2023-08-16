@@ -600,8 +600,8 @@ section#header{
 	}
 
 	a {
-		color: #14a876;
-		text-decoration: underline;
+		color: #fff;
+		text-decoration: none;
 	}
 
 		a:hover {
