@@ -957,9 +957,13 @@ h2 span {
         border-right: none;
         color: #fff;
         opacity: 1!important;
-        border-bottom: 3px solid white;
+        /* border-bottom: 3px solid white; */
         color: #fff!important
     }
+
+    .active-menu:hover{
+        color: #2edaa0 !important;
+      }
 
     #bottom .container {
         width: 600px
