@@ -385,6 +385,31 @@ li, a, button, span {
 /* ============================================ */
 
 /* NAVBAR */
+
+@media only screen and (max-width: 63.9375rem) {
+#header::before {
+    content: "";
+    width: 0%;
+    height: 100vh;
+    background: rgba(0,0,0,.6);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    position: absolute;
+    display: block;
+    top: 100%;
+    right: 0;
+    z-index: -11;
+    transition: width .5s,opacity .3s;
+}
+}
+
+@media only screen and (max-width: 63.9375rem) {
+#header.cs-active:before {
+    width: 100%;
+    opacity: 1;
+}
+}
 .navbar__container {
   background-color: var(--dark);
   color: var(--bodyTextColorWhite);
@@ -437,17 +462,32 @@ li, a, button, span {
   transition: color 0.3s ease;
 }
 
-.nav__button {
+.primary__button {
   background-color: var(--primary);
-  color: var(--headerColor);
+  color: #000 !important;
   text-transform: uppercase;
-  font-weight: bolder;
+  font-weight: bold;
   padding: 15px 25px;
   margin-left: 20px;
   border: none;
   cursor: pointer;
   position: relative;
+
 }
+
+.secondary__button {
+  background-color: transparent;
+  color: white;
+  font-weight: bolder;
+  padding: 14px 25px;
+  margin-left: 20px;
+  border: .5px solid white;
+  cursor: pointer;
+  position: relative;
+  box-sizing: content-box !important;
+  width: 8em;
+}
+
 
 .nav__sun {
   background-color: transparent;
@@ -469,7 +509,8 @@ li, a, button, span {
 
 
   /* NAV BUTTON ANIMATION */
-.nav__button.nav__button__slide::before {
+.primary__button.button__slide::before,
+.secondary__button.button__slide::before{
   content: "";
   position: absolute;
   top: 0;
@@ -483,20 +524,26 @@ li, a, button, span {
   transform-origin: left;
 }
 
-.nav__button.nav__button__slide {
+.primary__button.button__slide,
+.secondary__button.button__slide {
   transition: color 300ms ease-in-out;
   z-index: 1;
 }
 
-.nav__button.nav__button__slide:hover::before,
-.nav__button.nav__button__slide:focus::before {
+.primary__button.button__slide:hover::before,
+.primary__button.button__slide:focus::before,
+.secondary__button.button__slide:hover::before,
+.secondary__button.button__slide:focus::before {
   transform: scaleX(1);
 }
 
-.nav__button.nav__button__slide:hover,
-.nav__button.nav__button__slide:focus {
-  color: var(--bodyTextColorWhite);
+.primary__button.button__slide:hover,
+.primary__button.button__slide:focus,
+.secondary__button.button__slide:hover,
+.secondary__button.button__slide:focus {
+  color: var(--bodyTextColorWhite) !important;
 }  
+
 
 /* NAV LINK ANIMATION */
 .nav__link.nav__link__underline::before {
@@ -713,26 +760,123 @@ li, a, button, span {
 }
 }
 
+/* ============================================   */
+/*                  Services                      */
+/* ============================================   */
 
-/* ============================================   */
-/*                  Landing              S         */
-/* ============================================   */
-@media only screen and (min-width: 81.25em) {
-  #landing {
-  background: url("../assets/images/landing-photo.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  }
+@media only screen and (min-width: 0em) {
+#services {
+    background: var(--medium);
+}
 }
 
-@media only screen and (min-width: 48em) {
-  #landing {
-      padding: 0 clamp(2em,5vw,2.5em);
-  }
+@media only screen and (min-width: 1300px) {
+.services {
+    padding: 3.125em 5em;
 }
-@media only screen and (min-width: 0em){
+}
+@media only screen and (min-width: 768px) {
+.services {
+    font-size: min(1.8vw,1em);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 98%;
+}
+}
+@media only screen and (min-width: 0em) {
+.services {
+    border-radius: 0.3125em;
+    margin: auto;
+    margin-top: -10.4375em;
+    position: relative;
+    z-index: 100;
+    background: #fff;
+    width: 90%;
+    max-width: 82.5em;
+    padding: 3.125em 1.25em;
+    border-top: 0.375em solid var(--primary);
+    box-shadow: 0px 20px 40px rgba(0,0,0,.05);
+    margin-bottom: 3.125em;
+}
+}
+
+@media only screen and (min-width: 1300px) {
+.services .card {
+    max-width: 22.3125em;
+}
+}
+@media only screen and (min-width: 768px) {
+.services .card {
+    margin: 0;
+    max-width: 20.3125em;
+}
+}
+@media only screen and (min-width: 0em) {
+.services .card {
+    display: block;
+    width: 100%;
+    max-width: 22.3125em;
+    margin: auto;
+    margin-bottom: 3.125em;
+}
+}
+
+
+@media only screen and (min-width: 0em) {
+#services svg {
+    background: var(--primaryDark);
+}
+}
+
+
+
+@media only screen and (min-width: 0em) {
+.services .card svg {
+    background: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1.4375em;
+    width: 3em;
+    height: 3em;
+}
+}
+
+@media only screen and (min-width: 0em) {
+#services h2 {
+    color: #fff;
+    font-weight: bold;
+} 
+}
+@media only screen and (min-width: 0em) {
+.services .card h2 {
+    text-align: center;
+    font-size: 2em;
+    line-height: 27/20em;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 13/20em;
+}
+}
+
+@media only screen and (min-width: 0em) {
+.services .card p {
+    text-align: center;
+    line-height: 24/18em;
+    width: 100%;
+    opacity: .7;
+    color: var(--bodyTextColorWhite);
+
+}
+}
+
+
+/* ============================================   */
+/*                  Landing                       */
+/* ============================================   */
+@media only screen and (min-width: 0em) {
   #landing {
       font-family: "Roboto","Arial",sans-serif;
       text-align: center;
@@ -740,12 +884,38 @@ li, a, button, span {
       padding-bottom: 6.25rem;
       position: relative;
       z-index: 1;
-      overflow: hidden;
+    overflow: hidden;
+    }
+}
+
+@media only screen and (min-width: 48em) {
+  #landing {
+      padding: 0 clamp(2em,5vw,2.5em);
+  }
+}
+
+@media only screen and (min-width: 81.25em) {
+  #hero {
+    background: url("../assets/images/landing-photo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }
 
 @media only screen and (min-width: 0em) {
-#hero .cs-container:before {
+  #landing .landing__container {
+      width: 100%;
+      max-width: 80em;
+      padding: clamp(9em,25.95vw,17.5em) 0;
+      margin: auto;
+      position: relative;
+  }
+}
+
+@media only screen and (min-width: 0em) {
+  #landing .landing__container::before {
     content: "";
     width: 1px;
     height: 100%;
@@ -756,10 +926,11 @@ li, a, button, span {
     display: block;
     top: 0;
     left: 0;
+  }
 }
 
 @media only screen and (min-width: 48em) {
-#hero .cs-container:after {
+  #landing .landing__container::after {
     content: "";
     width: 1px;
     height: 100%;
@@ -770,80 +941,17 @@ li, a, button, span {
     display: block;
     top: 0;
     right: 0;
-
-}
+  }
 }
 
 @media only screen and (min-width: 48em) {
-#landing .landing__container {
+  #landing .landing__container {
     padding: clamp(7em,27.95vw,17.5em) 0 clamp(9em,30.95vw,23.5em) 0;
-}
-
-}
-
-@media only screen and (min-width: 48em) {
-  #landing {
-      padding: 0 clamp(2em,5vw,2.5em);
   }
 }
 
 @media only screen and (min-width: 0em) {
-#landing .landing__container {
-    width: 100%;
-    max-width: 80em;
-    padding: clamp(9em,25.95vw,17.5em) 0;
-    margin: auto;
-    position: relative;
-}
-}
-@media only screen and (min-width: 0em) {
-#landing.picture {
-  width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -2;
-}
-}
-
-
-
-@media only screen and (min-width: 0em) {
-#landing .picture img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-img {
-  overflow-clip-margin: content-box;
-  overflow: clip;
-}
-
-@media only screen and (min-width: 0em) {
-#landing .picture:before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: #000;
-  opacity: .7;
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  pointer-events: none;
-}
-
-}
-
-
-@media only screen and (min-width: 0em) {
-#landing .text__group {
+  #landing .landing__text__group {
     margin-bottom: clamp(3.75em,15.5vw,13.75em);
     margin: auto;
     width: 80vw;
@@ -853,7 +961,7 @@ img {
     justify-content: center;
     flex-wrap: wrap;
     box-sizing: border-box;
-}
+  }
 }
 
 @media only screen and (min-width: 0em) {
@@ -862,9 +970,6 @@ img {
     margin-bottom: 1rem;
     color: var(--primary);
 }
-}
-
-
 }
 @media only screen and (min-width: 0em) {
 .cs-topper {
@@ -878,7 +983,6 @@ img {
 }
 }
 
-
 @media only screen and (min-width: 0em) {
 #landing .cs-title {
     text-align: center;
@@ -886,7 +990,6 @@ img {
     color: var(--bodyTextColorWhite);
 }
 }
-
 @media only screen and (min-width: 0em) {
 .cs-title {
     font-size: var(--headerFontSize);
@@ -908,12 +1011,13 @@ img {
 }
 
 @media only screen and (min-width: 0em) {
-.cs-text {
+.cs-text { 
     font-size: var(--bodyFontSize);
     line-height: 1.5em;
     color: var(--bodyTextColor);
     width: 100%;
     margin: 0 auto;
+
 }
 }
 
@@ -922,8 +1026,8 @@ img {
     margin-bottom: 0;
     margin-right: 1.25rem;
 }
-}
-@media only screen and (min-width: 0em) {
+} 
+@media only screen and (min-width: 0em){
 #landing .cs-button-solid {
     line-height: clamp(2.875em,5.5vw,3.5em);
     height: initial;
@@ -948,6 +1052,102 @@ img {
     color: #000;
     transition: color .3s;
     transition-delay: .1s;
+}
+}
+
+@media only screen and (min-width: 0em) {
+.cs-button-solid::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #000;
+    width: 0;
+    transition: width .3s;
+}
+}
+/* 
+.landing__button {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  line-height: 3.125em;
+  height: 3.125rem;
+  text-align: center;
+  padding: 0 1.875rem;
+  position: relative;
+  z-index: 1;
+  background-color: var(--primary);
+  color: #000;
+  transition: color .3s;
+  transition-delay: .1s;
+} */
+
+@media only screen and (min-width: 0em) {
+  #landing .cs-button-transparent {
+    font-size: 1rem;
+    line-height: clamp(2.875em,5.5vw,3.5em);
+    width: 11.25rem;
+    height: clamp(2.875em,5.5vw,3.5em);
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0 0.5rem;
+    color: #fff;
+    padding: 0;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid var(--bodyTextColorWhite);
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+}
+
+@media only screen and (min-width: 0em) {
+  #landing .picture {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
+}
+
+@media only screen and (min-width: 0em) {
+#landing .picture::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .7;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+}
+
+@media only screen and (min-width: 0em) {
+#landing .picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 }
 /* ============================================   */
@@ -1093,5 +1293,3 @@ img {
 .footer__link_.footer__link__underline:focus::before {
   transform: scaleX(1);
 } 
-
-}
