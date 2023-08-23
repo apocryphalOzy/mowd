@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="assets/styles.css">
     <title>Boilerplaite cuck</title>
     <link rel="stylesheet" href="assets/styles.css">
+    <script defer src="assets/main.js"></script>
 </head>
 <body>
 
@@ -14,21 +15,42 @@
   <!-- ============================================ -->
 
   <header id="header" class="header">
-<!-- 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="100%" height="100%">
-        <image width="1080" height="1080" xlink:href="data:image/png;base64,Base64EncodedDataHere" />
-    </svg>
-    <a href="" class="nav__logo" alt="logo"><img class="logo" src="assets/logos/Header-Mission Oaks Web Designs-1.svg" alt=""></a> -->
+
+    <!-- NavBar -->
     <nav class="navbar__container">
+
+      <!--Logo-->
       <div class="nav__logo">Logo</div>
       <div class="hamburger-menu"></div>
 
+      <!--Nav Links-->
+      <ul class="nav__list">
+        <li class="nav-item nav__main"><a href="#" class="nav__link nav__link__underline">Home</a></li>
+        <li class="nav-item nav__main"><a href="#" class="nav__link nav__link__underline">About Us</a></li>
+        <li class="nav-item nav__main"><a href="#" class="nav__link nav__link__underline">Projects</a></li>
+        <li class="nav-item nav__main"><a href="#" class="nav__link nav__link__underline">Reviews</a></li>
+        <li class="nav-item nav__main"><a href="#" class="nav__link nav__link__underline">Blog</a></li>
+      </ul>
+
+      <!--Contact Us-->
+      <a href="#">
+        <button class="nav-item primary__button button__slide nav__main">Contact Us</button>
+      </a>
+
+      <!--Sun SVG Theme-->
+      <button class="nav__sun">
+        <svg class="sun__svg" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 43" width="27px" height="27px"><path fill="#FF9800" d="M11 11H37V37H11z"/><path fill="#FF9800" d="M11.272 11.272H36.728V36.728H11.272z" transform="rotate(-45.001 24 24)"/><path fill="#FFEB3B" d="M13,24c0,6.077,4.923,11,11,11c6.076,0,11-4.923,11-11s-4.924-11-11-11C17.923,13,13,17.923,13,24"/>
+        </svg>
+      </button>
+
+      <!--Hamburger Button-->
       <input id="menu-toggle" type="checkbox">
       <label class="menu-button-container" for="menu-toggle">
       <div class="menu-button"></div>
         <span></span>
       </label>
   
+      <!--Mobile Menu-->
       <ul class="menu__box">
         <li><a class="menu__item" href="#">Home</a></li>
         <li><a class="menu__item" href="#">About Us</a></li>
@@ -36,37 +58,20 @@
         <li><a class="menu__item" href="#">Reviews</a></li>
         <li><a class="menu__item" href="#">Blog</a></li>
       </ul>
-
-      <ul class="nav__list">
-        <li class="nav-item nav__main"><a href="#" class="nav__link nav__link__underline">Home</a></li>
-        <li class="nav-item nav__main"><a href="#" class="nav__link nav__link__underline">About Us</a></li>
-        <li class="nav-item nav__main"><a href="#" class="nav__link nav__link__underline">Projects</a></li>
-        <li class="nav-item nav__main"><a href="#" class="nav__link nav__link__underline">Reviews</a></li>
-        <li class="nav-item nav__main"><a href="#" class="nav__link nav__link__underline">Blog</a></li>
-        <li>
-          <a href="#">
-            <button class="nav-item primary__button button__slide nav__main">Contact Us</button>
-          </a>
-        </li>
-
-            <button class="nav__sun">
-              <svg class="sun__svg" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="30px" height="30px"><path fill="#FF9800" d="M11 11H37V37H11z"/><path fill="#FF9800" d="M11.272 11.272H36.728V36.728H11.272z" transform="rotate(-45.001 24 24)"/><path fill="#FFEB3B" d="M13,24c0,6.077,4.923,11,11,11c6.076,0,11-4.923,11-11s-4.924-11-11-11C17.923,13,13,17.923,13,24"/>
-              </svg>
-            </button>
-
-        </ul>
     </nav>
   </header>
 
 
 
 
-<!-- ============================================ -->
-<!--                   Landing                    -->
-<!-- ============================================ -->
 
 
 <main id="main" class="main">
+
+  <!-- ============================================ -->
+  <!--                   Landing                    -->
+  <!-- ============================================ -->
+
   <section id="landing">
   <div class="landing__container">
     <div class="landing__text__group">
@@ -99,9 +104,6 @@
 <section id="services" class="services">
   <!-- Get Icons From flaticon.com -->
   <div class="card">
-      <!-- <picture>
-          <img aria-hidden="true" decoding="async" src="/mowd/websites/_boilerplate/blueCollar/assets/images/home-1-svgrepo-com.svg" alt="appliance" width="48" height="48">
-      </picture> -->
       <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M22 22L2 22" stroke="#fafbfc" stroke-width="1.5" stroke-linecap="round"/>
         <path d="M2 11L6.06296 7.74968M22 11L13.8741 4.49931C12.7784 3.62279 11.2216 3.62279 10.1259 4.49931L9.34398 5.12486" stroke="#fafbfc" stroke-width="1.5" stroke-linecap="round"/>
@@ -114,10 +116,8 @@
       <h2>Service 1</h2>
       <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
   </div>
+
   <div class="card">
-      <!-- <picture>
-          <img aria-hidden="true" decoding="async" src="" alt="appliance" width="48" height="48">
-      </picture> -->
       <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M21 16.0002C21 18.8286 21 20.2429 20.1213 21.1215C19.2426 22.0002 17.8284 22.0002 15 22.0002H9C6.17157 22.0002 4.75736 22.0002 3.87868 21.1215C3 20.2429 3 18.8286 3 16.0002V13.0002M16 4.00195C18.175 4.01406 19.3529 4.11051 20.1213 4.87889C21 5.75757 21 7.17179 21 10.0002V12.0002M8 4.00195C5.82497 4.01406 4.64706 4.11051 3.87868 4.87889C3.11032 5.64725 3.01385 6.82511 3.00174 9" stroke="#fafbfc" stroke-width="1.5" stroke-linecap="round"/>
         <path d="M9 17.5H15" stroke="#fafbfc" stroke-width="1.5" stroke-linecap="round"/>
@@ -128,10 +128,8 @@
       <h2>Service 2</h2>
       <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
   </div>
+
   <div class="card">
-      <!-- <picture>
-          <img aria-hidden="true" decoding="async" src="" alt="appliance" width="48" height="48">
-      </picture> -->
       <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M14.5 19.5H9.5M14.5 19.5C14.5 18.7865 14.5 18.4297 14.5381 18.193C14.6609 17.4296 14.6824 17.3815 15.1692 16.7807C15.3201 16.5945 15.8805 16.0927 17.0012 15.0892C18.5349 13.7159 19.5 11.7206 19.5 9.5C19.5 8.62341 19.3496 7.78195 19.0732 7M14.5 19.5C14.5 20.4346 14.5 20.9019 14.299 21.25C14.1674 21.478 13.978 21.6674 13.75 21.799C13.4019 22 12.9346 22 12 22C11.0654 22 10.5981 22 10.25 21.799C10.022 21.6674 9.83261 21.478 9.70096 21.25C9.5 20.9019 9.5 20.4346 9.5 19.5M9.5 19.5C9.5 18.7865 9.5 18.4297 9.46192 18.193C9.3391 17.4296 9.31762 17.3815 8.83082 16.7807C8.67987 16.5945 8.11945 16.0927 6.99876 15.0892C5.4651 13.7159 4.5 11.7206 4.5 9.5C4.5 5.35786 7.85786 2 12 2C13.3637 2 14.6423 2.36394 15.7442 3" stroke="#fafbfc" stroke-width="1.5" stroke-linecap="round"/>
         <path d="M12.7857 8.5L10.6428 11.5H13.6428L11.5 14.5" stroke="#fafbfc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -140,6 +138,10 @@
       <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
   </div>
 </section>
+
+<!-- ============================================ -->
+<!--                   About Us                   -->
+<!-- ============================================ -->
 
     
 <!-- ============================================ -->
