@@ -353,14 +353,50 @@ template {
   margin: 0;
   padding: 0;
   font-family: "Roboto","Arial", sans-serif;
+  color: var(--bodyTextColorWhite);
+  font-size: 100% ;
+}
+
+@media only screen and (min-width: 0em) {
+body, html {
+    margin: 0;
+    padding: 0;
+    font-size: 100% !important;
+    font-family: "Roboto",Arial,sans-serif;
+    color: var(--bodyTextColor);
+    overflow-x: hidden;
+}
+}
+html {
+  background-color:   --medium #2c394b  ;
 }
 
 li, a, button, span {
-  font-size: 1em;
   color: white;
   text-decoration: none;
 }
 
+
+/* @media only screen and (min-width: 0em) {
+:root {
+    --dark: #082032;
+    --medium: #2c394b;
+    --accent: #334756;
+
+    
+  --primary: #ffba19;
+  --primaryLight: #ffd675;
+  --secondary: #001f3f;
+  --secondaryLight: #001f3f;
+  --headerColor: #1a1a1a;
+  --bodyTextColor: #4e4b66;
+  --bodyTextColorWhite: #fafbfc;
+  --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+  --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+  --bodyFontSize: 1rem;
+  --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+}
+} */
 :root {
   --dark: #082032;
   --medium: #2c394b;
@@ -753,6 +789,11 @@ li, a, button, span {
 /* ============================================   */
 /*                  Landing                       */
 /* ============================================   */
+
+main {
+  background-color: var(--dark);
+}
+
 @media only screen and (min-width: 0em) {
   #landing {
       font-family: "Roboto","Arial",sans-serif;
@@ -1088,6 +1129,7 @@ li, a, button, span {
       max-width: 22.3125em;
       margin: auto;
       margin-bottom: 3.125em;
+      font-size: .9rem;
   }
   }
   
@@ -1168,13 +1210,400 @@ li, a, button, span {
 /*                   About Us                   */
 /* ============================================ */
 
+@media only screen and (min-width: 0em) {
+#about__us {
+    padding: var(--sectionPadding);
+}
+}
+
+@media only screen and (min-width: 64em) {
+#about__us .about__us__container {
+    flex-flow: row;
+    justify-content: space-between;
+    gap: 3.25rem;
+    flex-direction: row !important;
+
+}
+}
+
+@media only screen and (min-width: 0em) {
+#about__us .about__us__container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+}
+
+@media only screen and (min-width: 64em) {
+#about__us .about__us__left {
+    font-size: min(1.1vw, 1em) !important;
+    flex: none;
+}
+}
+@media only screen and (min-width: 0em) {
+#about__us .about__us__left {
+    font-size: min(3.31vw,.7em);
+    width: 39.4375em;
+    height: 39.75em;
+    position: relative;
+}
+}
+@media only screen and (min-width: 0em) {
+#about__us .cs-picture1 {
+    width: 32.625em;
+    height: 36.3125em;
+    left: 0;
+    top: 0;
+}
+}
+@media only screen and (min-width: 0em) {
+ #about__us .cs-picture2 {
+    background-color: var(--dark);
+    border: clamp(0.375em,1.5vw,0.75em) solid var(--dark);
+}
+}
+@media only screen and (min-width: 0em) {
+#about__us .cs-picture2 {
+    width: 25.875em;
+    height: 25em;
+    background-color: #fff;
+    box-shadow: rgba(0,0,0,.1) 0px 0px 40px;
+    border: clamp(0.375em,1.5vw,0.75em) solid var(--dark);
+    right: 0;
+    bottom: 0;
+}
+}
+@media only screen and (min-width: 0em) {
+#about__us .cs-picture {
+    border-radius: 1.5em;
+    overflow: hidden;
+    position: absolute;
+    display: block;
+}
+}
+@media only screen and (min-width: 0em) {
+#about__us .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+}
+
+/* RIGHT SIDE */
+@media only screen and (min-width: 64em){
+#about__us .about__us__right {
+    margin: 0;
+}
+}
+
+@media only screen and (min-width: 0em){
+#about__us .about__us__right {
+    margin: auto;
+    max-width: 30.875rem;
+}
+}
+
+@media only screen and (min-width: 0em){
+ #about__us .cs-topper {
+    color: var(--primaryLight);
+}
+}
+
+@media only screen and (min-width: 0em){
+#about__us .cs-topper {
+    text-align: left;
+    margin-bottom: 0.25rem;
+}
+}
+
+@media only screen and (min-width: 0em){
+.cs-topper {
+    font-size: 1rem;;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--secondary);
+    display: block;
+}
+}
+
+@media only screen and (min-width: 0em){
+ #about__us .cs-title,  #about__us .cs-text,  #about__us .cs-h3,  #about__us .cs-flex-p,  #about__us .cs-name {
+    color: var(--bodyTextColorWhite);
+}
+}
+@media only screen and (min-width: 0em){
+#about__us .cs-title {
+    text-align: left;
+    max-width: 50rem;
+}
+}
+@media only screen and (min-width: 0em){
+.cs-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1.2em;
+    margin: 0 auto 1rem;
+    color: var(--headerColor);
+    position: relative;
+}
+}
+@media only screen and (min-width: 0em){
+#about__us .cs-text {
+    text-align: left;
+    max-width: 46.875rem;
+    margin-bottom: 1rem;
+}
+}
+@media only screen and (min-width: 0em){
+.cs-text {
+    font-size: 1rem;
+    line-height: 1.5em;
+    color: var(--bodyTextColor);
+    width: 100%;
+    margin: 0 auto;
+}
+}
+@media only screen and (min-width: 0em){
+#about__us .cs-text:last-of-type {
+    margin-bottom: 2rem;
+}
+}
+@media only screen and (min-width: 0em){
+ #about__us .cs-flex-group {
+    background-color: var(--accent);
+
+}
+}
+@media only screen and (min-width: 0em){
+#about__us .cs-flex-group {
+    padding: clamp(1rem,3vw,2rem);
+    border-radius: 1rem;
+    position: relative;
+}
+}
+
+@media only screen and (min-width: 0em){
+#about__us .cs-flex-p {
+    font-size: 1rem;
+    line-height: 1.5em;
+    margin: 0 0 1rem;
+    color: var(--bodyTextColorWhite);
+}
+}
+@media only screen and (min-width: 0em){
+#about__us .cs-name {
+    font-size: 1rem;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 0.25rem;
+    color: var(--bodyTextColorWhite);
+    display: block;
+}
+}
+@media only screen and (min-width: 0em){
+ #about__us .cs-job {
+    color: var(--bodyTextColorWhite);
+    opacity: .8;
+}
+}
+@media only screen and (min-width: 0em){
+#about__us .cs-job {
+    font-size: .9rem;
+    line-height: 1.5em;
+    color: var(--bodyTextColorWhite);
+    display: block;
+}
+}
+
+@media only screen and (min-width: 0em){
+ #about__us .cs-quote-icon {
+    opacity: .2;
+}
+}
+@media only screen and (min-width: 0em){
+#about__us .cs-quote-icon {
+    width: clamp(3.75rem,10vw,8.5rem);
+    height: auto;
+    position: absolute;
+    bottom: 0rem;
+    right: clamp(1rem,4vw,2rem);
+}
+}
+
+@media only screen and (min-width: 0em) {
+#about__us .primary__button {
+    margin-top: 2rem;
+    font-size: .9rem;
+}
+}
+
+
+/* ============================================  */
+/*                    SEO                        */
+/* ============================================  */
+
+/* Main */
+@media only screen and (min-width: 0em) {
+#SEO {
+    padding: var(--sectionPadding);
+}
+}
+@media only screen and (min-width: 64em) {
+#SEO .SEO__container {
+    flex-flow: row;
+    justify-content: space-between;
+    gap: 3.25rem;
+    flex-direction: row !important;
+
+}
+}
+@media only screen and (min-width: 0em) {
+#SEO .SEO__container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+}
+/* Left */
+@media only screen and (min-width: 64em){
+#SEO .cs-left {
+  font-size: min(1.1vw, 1em) !important;
+  flex: none;
+    order: 2;
+}
+}
+@media only screen and (min-width: 0em){
+#SEO .cs-left {
+    font-size: min(3.31vw,.7em);
+
+    width: 39.4375em;
+    height: 39.75em;
+    position: relative;
+}
+}
+
+/* Image */
+@media only screen and (min-width: 0em) {
+#SEO .cs-picture1 {
+    width: 32.625em;
+    height: 36.3125em;
+    right: 0;
+    top: 0;
+}
+}
+@media only screen and (min-width: 0em) {
+#SEO .cs-picture {
+    border-radius: 1.5em;
+    overflow: hidden;
+    position: absolute;
+    display: block;
+}
+}
+@media only screen and (min-width: 0em) {
+#SEO .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+}
+
+@media only screen and (min-width: 0em) {
+#SEO .cs-picture2 {
+    background-color: var(--dark);
+    border: clamp(0.375em,1.5vw,0.75em) solid var(--dark);
+}
+}
+@media only screen and (min-width: 0em){
+#SEO .cs-picture2 {
+    width: 25.875em;
+    height: 25em;
+    background-color: #fff;
+    box-shadow: rgba(0,0,0,.1) 0px 0px 40px;
+    border: clamp(0.375em,1.5vw,0.75em) solid var(--dark);
+    left: 0;
+    bottom: 0;
+}
+}
+/* Right */
+@media only screen and (min-width: 64em){
+#SEO .cs-right {
+    margin: 0;
+}
+}
+@media only screen and (min-width: 0em){
+#SEO .cs-right {
+    margin: auto;
+    max-width: 30.875rem;
+}
+}
+
+@media only screen and (min-width: 0em){
+#SEO .cs-topper {
+    color: var(--primaryLight);
+}
+}
+@media only screen and (min-width: 0em){
+#SEO .cs-topper {
+    text-align: left;
+    margin-bottom: 0.25rem;
+}
+}
+
+@media only screen and (min-width: 0em) {
+ #SEO .cs-title,  #SEO .cs-text,  #SEO .cs-h3,  #SEO .cs-flex-p,  #SEO .cs-name {
+    color: var(--bodyTextColorWhite);
+}
+}
+@media only screen and (min-width: 0em) {
+#SEO .cs-title {
+    text-align: left;
+    max-width: 50rem;
+}
+}
+@media only screen and (min-width: 0em) {
+#SEO .cs-text {
+    text-align: left;
+    max-width: 46.875rem;
+    margin-bottom: 1rem;
+}
+}
+@media only screen and (min-width: 0em) {
+#SEO .cs-text:last-of-type {
+    margin-bottom: 2rem;
+}
+}
+
+@media only screen and (min-width: 0em) {
+  #SEO .cs-text {
+    font-size: 1rem;
+  }
+  }
 /* ============================================  */
 /*                  Footer                       */
 /* ============================================  */
 
 /* FOOTER LAYOUT */
 .footer {
-  background-color: var(--dark);
+  background-color: #061623;
   padding: 80px 0 20px 0
 }
 
