@@ -1247,8 +1247,8 @@ main {
 }
 @media only screen and (min-width: 0em) {
 #about__us .about__us__left {
-    font-size: min(3.31vw,.7em);
-    width: 39.4375em;
+  font-size: min(2.31vw, .8em);
+  width: 39.4375em;
     height: 39.75em;
     position: relative;
 }
@@ -1490,7 +1490,7 @@ main {
 }
 @media only screen and (min-width: 0em){
 #SEO .cs-left {
-    font-size: min(3.31vw,.7em);
+    font-size: min(2.31vw, .8em);
 
     width: 39.4375em;
     height: 39.75em;
@@ -1740,3 +1740,23 @@ main {
 .footer__link_.footer__link__underline:focus::before {
   transform: scaleX(1);
 } 
+
+
+@media screen and (max-width: 930px) {
+  .container-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: visible;
+  }
+
+  .left-section-footer {
+    width: 0;
+  }
+  .footer__logo {
+    padding-left: 0;
+    display: inline-block;
+  }
+}
