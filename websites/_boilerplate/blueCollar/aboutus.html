@@ -3,9 +3,194 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us</title>
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body>
+   <!-- ============================================ -->
+  <!--                 Navigation                   -->
+  <!-- ============================================ -->
+
+  <header id="header" class="header">
+
+    <!-- NavBar -->
+    <nav class="navbar__container">
+
+      <!--Logo-->
+      <div class="nav__logo">Logo</div>
+      <div class="hamburger-menu"></div>
+
+      <!--Nav Links-->
+      <ul class="nav__list">
+        <li class="nav-item nav__main"><a href="./landing.html" class="nav__link nav__link__underline">Home</a></li>
+        <li class="nav-item nav__main"><a href="./aboutus.html" class="nav__link nav__link__underline">About Us</a></li>
+        <li class="nav-item nav__main"><a href="./projects-portfolio.html" class="nav__link nav__link__underline">Projects</a></li>
+        <li class="nav-item nav__main"><a href="./reviews-testimonials.html" class="nav__link nav__link__underline">Reviews</a></li>
+        <!-- <li class="nav-item nav__main"><a href="#" class="nav__link nav__link__underline">Blog</a></li> -->
+      </ul>
+
+      <!--Contact Us-->
+      <a href="#">
+        <button class="nav-item primary__button button__slide nav__main">Contact Us</button>
+      </a>
+
+      <!--Sun SVG Theme-->
+      <button class="nav__sun">
+        <svg class="sun__svg" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 43" width="27px" height="27px"><path fill="#FF9800" d="M11 11H37V37H11z"/><path fill="#FF9800" d="M11.272 11.272H36.728V36.728H11.272z" transform="rotate(-45.001 24 24)"/><path fill="#FFEB3B" d="M13,24c0,6.077,4.923,11,11,11c6.076,0,11-4.923,11-11s-4.924-11-11-11C17.923,13,13,17.923,13,24"/>
+        </svg>
+      </button>
+
+      <!--Hamburger Button-->
+      <input id="menu-toggle" type="checkbox">
+      <label class="menu-button-container" for="menu-toggle">
+      <div class="menu-button"></div>
+        <span></span>
+      </label>
   
+      <!--Mobile Menu-->
+      <ul class="menu__box">
+        <li><a class="menu__item" href="./landing.html">Home</a></li>
+        <li><a class="menu__item" href="./aboutus.html">About Us</a></li>
+        <li><a class="menu__item" href="./projects-portfolio.html">Projects</a></li>
+        <li><a class="menu__item" href="./reviews-testimonials.html">Reviews</a></li>
+        <!-- <li><a class="menu__item" href="#">Blog</a></li> -->
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+      <h1 id="home-h">About Us</h1>
+      <picture>
+        <source media="(max-width:600px )" srcset="https://d33wubrfki0l68.cloudfront.net/67f6cdea2924b29064b359646d6033358d4a743c/44999/assets/images/cabinets2-m.jpg">
+        <source media="(min-width:601px )" srcset="https://d33wubrfki0l68.cloudfront.net/assets/images/9c5d801ab59a0da474c21639ecdf1aef356825c3/cabinets2.jpg">
+        <img aria-hidden="true" decoding="async" src="https://d33wubrfki0l68.cloudfront.net/assets/images/9c5d801ab59a0da474c21639ecdf1aef356825c3/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+      </picture>
+
+    </section>
+    
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="sbs">
+      <div class="cs-container">
+        <!-- Left Image Section -->
+        <div class="cs-left">
+          <picture class="cs-picture cs-picture1">
+            <source media="(max-width:600px )" srcset="https://d33wubrfki0l68.cloudfront.net/67f6cdea2924b29064b359646d6033358d4a743c/44999/assets/images/cabinets2-m.jpg">
+            <source media="(min-width:601px )" srcset="https://d33wubrfki0l68.cloudfront.net/assets/images/9c5d801ab59a0da474c21639ecdf1aef356825c3/cabinets2.jpg">
+            <img aria-hidden="true" decoding="async" src="https://d33wubrfki0l68.cloudfront.net/assets/images/9c5d801ab59a0da474c21639ecdf1aef356825c3/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+          </picture>
+          <picture class="cs-picture cs-picture2">
+            <source media="(max-width: 600px)" srcset="https://d33wubrfki0l68.cloudfront.net/b43f48bdd2f61233c55a6fe6ad516a3f97833693/a9350/assets/images/construction-m.jpg">
+            <source media="(min-width: 601px)" srcset="https://d33wubrfki0l68.cloudfront.net/d5093eb505d3719c5fe5ab931a81ef625c099e3b/7983e/assets/images/construction.jpg">
+            <img aria-hidden="true" decoding="async" src="https://d33wubrfki0l68.cloudfront.net/d5093eb505d3719c5fe5ab931a81ef625c099e3b/7983e/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
+          </picture>
+        </div>
+        <!-- Right Content Section -->
+            <div class="cs-right">
+                <span class="cs-topper">About Us</span>
+                <h2 class="cs-title">About Company Title</h2>
+                <p class="cs-text">
+                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+                </p>
+                <p class="cs-text">
+                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+                </p>
+                <div class="cs-flex-group">
+                    <p class="cs-flex-p">
+                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
+                    </p>
+                    <span class="cs-name">Justin Time</span>
+                    <span class="cs-job">CEO-Founder</span>
+                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
+                </div>
+                <a href="/projects" class="cs-button-solid">Our Projects</a>
+            </div>
+      </div>
+    </section>
+
+  </main>
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+<footer id="footer">
+  <div class="container">
+      <div class="left-section">
+          <a class="logo" href="/"><img loading="lazy" decoding="async" src="" alt="logo" width="264" height="78"></a>
+          <!-- <p>
+              Extra content if you need it, if not you can delete this whole p tag. I usually do.
+          </p> -->
+      </div>
+      <div class="right-section">
+          <div class="lists">
+              <ul>
+                  <li>
+                      <h2>Information</h2>
+                  </li>
+                  <li>
+                      <a href="/">Home</a>
+                  </li>
+                  <li>
+                      <a href="/about">About Us</a>
+                  </li>
+                  <li>
+                      <a href="/projects">Projects</a>
+                  </li>
+                  <li>
+                      <a href="/testimonials">Reviews</a>
+                  </li>
+                  <li>
+                      <a href="/contact">Contact</a>
+                  </li>
+              </ul>
+              <ul>
+                  <li>
+                      <h2>Services</h2>
+                  </li>
+                  <li>Service1</li>
+                  <li>Service2</li>
+                  <li>Service4</li>
+                  <li>Service5</li>
+              </ul>
+              <ul>
+                  <li>
+                      <h2>Contact</h2>
+                  </li>
+                  <li>
+                      <a href="/contact">
+                          First Address Line<br>
+                          Second Address Line<br>
+                          Denver
+                          CO
+                          80206
+                      </a>
+                  </li>
+                  <li>
+                      <a href="tel:555-779-4407">
+                          T:
+                          (555) 779-4407
+                      </a>
+                  </li>
+                  <li>
+                      <a href="mailto:help@codestitch.app">Click to Email</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+
+  <div class="credit">
+      <span>Designed and Hand Coded by</span>
+      <a href="/" target="_blank" rel="noopener">Your Company Name</a>
+      <span class="copyright">
+          Copyright 2023 - Present</span>
+  </div>
+</footer>
+
 </body>
 </html>
