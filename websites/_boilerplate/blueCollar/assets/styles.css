@@ -1597,13 +1597,313 @@ main {
     font-size: 1rem;
   }
   }
+
+/* ============================================ */
+/*                 Projects                     */
+/* ============================================ */
+
+/* container */
+@media only screen and (min-width: 0em){
+#gallery {
+    text-align: center;
+    padding: var(--sectionPadding);
+    position: relative;
+    overflow: hidden;
+}
+}
+@media only screen and (min-width: 0em){
+#gallery .cs-container {
+    width: 100%;
+    max-width: 82.625em;
+    margin: auto;
+}
+}
+@media only screen and (min-width: 0em){
+#gallery .cs-topper {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+}
+@media only screen and (min-width: 0em){
+.cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--secondary);
+    display: block;
+
+}
+}
+@media only screen and (min-width: 0em){
+body.dark-mode #gallery .cs-title {
+    color: var(--bodyTextColorWhite);
+}
+}
+@media only screen and (min-width: 0em){
+#gallery .cs-title {
+    text-align: center;
+    max-width: 50.8125rem;
+    margin-bottom: 2.5rem;
+}
+}
+/* row 1*/
+@media only screen and (min-width: 0em){
+#gallery .cs-image-group {
+    font-size: min(1.1vw,1em);
+    width: 100%;
+    max-width: 82.625em;
+    padding: 0;
+    margin: 0 auto 3.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.875em;
+}
+}
+@media only screen and (min-width: 0em){
+#gallery .cs-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.875em;
+}
+}
+@media only screen and (min-width: 0em){
+#gallery .cs-row-1 .cs-picture1 {
+    width: 26.25em;
+    height: 35.4375em;
+}
+}
+@media only screen and (min-width: 0em){
+#gallery .cs-picture {
+    position: relative;
+    display: block;
+}
+}
+
+@media only screen and (min-width: 0em){
+#gallery .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+}
+@media only screen and (min-width: 0em){
+#gallery .cs-row-1 .cs-picture2 {
+    width: 26.25em;
+    height: 39.3125em;
+}
+}
+@media only screen and (min-width: 0em){
+#gallery .cs-row-1 .cs-picture3 {
+    width: 26.25em;
+    height: 32em;
+}
+}
+/* row 2 */
+@media only screen and (min-width: 0em){
+#gallery .cs-row-2 .cs-picture1 {
+    width: 26.25em;
+    height: 30.75em;
+}
+}
+@media only screen and (min-width: 0em){
+#gallery .cs-row-2 .cs-picture2 {
+    width: 26.25em;
+    height: 32.3125em;
+}
+}
+@media only screen and (min-width: 0em){
+#gallery .cs-row-2 .cs-picture3 {
+    width: 26.25em;
+    height: 39.3125em;
+}
+}
+@media only screen and (min-width: 0em){
+#gallery .cs-row-3 .cs-picture1 {
+    width: 26.25em;
+    height: 39.0625em;
+}
+}
+@media only screen and (min-width: 0em){
+#gallery .cs-row-3 .cs-picture2 {
+    width: 26.25em;
+    height: 28.25em;
+}
+}
+@media only screen and (min-width: 0em){
+#gallery .cs-row-3 .cs-picture3 {
+    width: 26.25em;
+    height: 39.3125em;
+}
+}
+@media only screen and (min-width: 0em){
+.cs-button-solid {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    width: auto;
+    line-height: 3.125em;
+    height: 3.125rem;
+    text-align: center;
+    padding: 0 1.875rem;
+    position: relative;
+    z-index: 1;
+    background-color: var(--primary);
+    color: #000;
+    transition: color .3s;
+    transition-delay: .1s;
+}
+}
+
+/* ============================================  */
+/*                  Get It Done                  */
+/* ============================================  */
+
+@media only screen and (min-width: 0em) {
+  #cta {
+      position:relative;
+      padding: 3.125rem 0
+  }
+
+  #cta:before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 100%;
+      background: #000;
+      opacity: .7;
+      top: 0;
+      left: 0;
+      z-index: -1
+  }
+
+  #cta .container {
+      text-align: center
+  }
+
+  #cta picture {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+  }
+
+  #cta picture img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover
+  }
+
+  #cta .title {
+      font-weight: 900;
+      font-size: min(9vw,3rem);
+      line-height: 58/48;
+      color: #fff;
+      position: relative;
+      margin-bottom: 2.25rem;
+      text-align: center;
+      z-index: 3;
+  }
+
+  #cta .cs-button-solid {
+    position: relative;
+    z-index: 3;
+  }
+
+  #cta p {
+      color: #fff;
+      text-align: center;
+      opacity: 1;
+      margin: auto;
+      margin-bottom: 2.25rem;
+      width: 96%;
+      position: relative;
+      max-width: 37.375rem;
+      z-index: 5;
+
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  #cta {
+      padding:10.5rem 0
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  #cta {
+      position:relative;
+      margin-top: 6.25rem
+  }
+
+  #cta:before {
+      display: none
+  }
+
+  #cta:after {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 69.25rem;
+      width: 125rem;
+      background: url("/assets/svgs/cta-squares.svg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 1;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -3
+  }
+
+  #cta .container {
+      width: 90.0625%;
+      margin: auto
+  }
+
+  #cta picture {
+      width: 90.0625%;
+      left: 50%;
+      transform: translateX(-50%)
+  }
+
+  #cta picture:before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 100%;
+      background: #000;
+      opacity: .7;
+      top: 0;
+      left: 0;
+      z-index: 1
+  }
+} 
+
 /* ============================================  */
 /*                  Footer                       */
 /* ============================================  */
 
 @media only screen and (min-width: 0em) {
   #footer {
-      background:#1c1c1c;
+      background:#061623;
       padding: 5.25rem 0 1.25rem;
       font-size: min(4vw,1.2em)
   }
@@ -1849,7 +2149,7 @@ main {
 /*                    ROOT                       */
 /* ============================================  */
 
-@media only screen and (min-width: 0em) {
+ @media only screen and (min-width: 0em) {
   :root {
       --primary: #ffba19;
       --primaryLight: #ffd675;
@@ -2789,122 +3089,3 @@ main {
   }
 }
 
-@media only screen and (min-width: 0em) {
-  #cta {
-      position:relative;
-      padding: 3.125rem 0
-  }
-
-  #cta:before {
-      content: "";
-      position: absolute;
-      display: block;
-      height: 100%;
-      width: 100%;
-      background: #000;
-      opacity: .7;
-      top: 0;
-      left: 0;
-      z-index: -1
-  }
-
-  #cta .container {
-      text-align: center
-  }
-
-  #cta picture {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      z-index: -2
-  }
-
-  #cta picture img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      object-fit: cover
-  }
-
-  #cta .title {
-      font-weight: 900;
-      font-size: min(9vw,3rem);
-      line-height: 58/48;
-      color: #fff;
-      position: relative;
-      margin-bottom: 2.25rem;
-      text-align: center
-  }
-
-  #cta p {
-      color: #fff;
-      text-align: center;
-      opacity: 1;
-      margin: auto;
-      margin-bottom: 2.25rem;
-      width: 96%;
-      max-width: 37.375rem
-  }
-}
-
-@media only screen and (min-width: 64em) {
-  #cta {
-      padding:10.5rem 0
-  }
-}
-
-@media only screen and (min-width: 1300px) {
-  #cta {
-      position:relative;
-      margin-top: 6.25rem
-  }
-
-  #cta:before {
-      display: none
-  }
-
-  #cta:after {
-      content: "";
-      position: absolute;
-      display: block;
-      height: 69.25rem;
-      width: 125rem;
-      background: url("/assets/svgs/cta-squares.svg");
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
-      opacity: 1;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: -3
-  }
-
-  #cta .container {
-      width: 90.0625%;
-      margin: auto
-  }
-
-  #cta picture {
-      width: 90.0625%;
-      left: 50%;
-      transform: translateX(-50%)
-  }
-
-  #cta picture:before {
-      content: "";
-      position: absolute;
-      display: block;
-      height: 100%;
-      width: 100%;
-      background: #000;
-      opacity: .7;
-      top: 0;
-      left: 0;
-      z-index: 1
-  }
-}
