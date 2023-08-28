@@ -1817,8 +1817,10 @@ footer img {
     height: auto
 }
 
+/* PRICE BOX */
+
 .price-box h3:after {
-    content: '/MO';
+    content: '';
     position: absolute;
     right: -86px;
     bottom: -15px;
@@ -1886,6 +1888,8 @@ footer img {
     );
     background: linear-gradient(90deg, rgba(53,74,77,.9) 0, rgba(0,136,68,.728) 100%);
 }
+
+/* PRICE BOX */
 
 @media screen and (min-width: 500px) and (max-width:1024px) {
     .section {
