@@ -1597,13 +1597,313 @@ main {
     font-size: 1rem;
   }
   }
+
+/* ============================================ */
+/*                 Projects                     */
+/* ============================================ */
+
+/* container */
+@media only screen and (min-width: 0em){
+#gallery {
+    text-align: center;
+    padding: var(--sectionPadding);
+    position: relative;
+    overflow: hidden;
+}
+}
+@media only screen and (min-width: 0em){
+#gallery .cs-container {
+    width: 100%;
+    max-width: 82.625em;
+    margin: auto;
+}
+}
+@media only screen and (min-width: 0em){
+#gallery .cs-topper {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+}
+@media only screen and (min-width: 0em){
+.cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--secondary);
+    display: block;
+
+}
+}
+@media only screen and (min-width: 0em){
+body.dark-mode #gallery .cs-title {
+    color: var(--bodyTextColorWhite);
+}
+}
+@media only screen and (min-width: 0em){
+#gallery .cs-title {
+    text-align: center;
+    max-width: 50.8125rem;
+    margin-bottom: 2.5rem;
+}
+}
+/* row 1*/
+@media only screen and (min-width: 0em){
+#gallery .cs-image-group {
+    font-size: min(1.1vw,1em);
+    width: 100%;
+    max-width: 82.625em;
+    padding: 0;
+    margin: 0 auto 3.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.875em;
+}
+}
+@media only screen and (min-width: 0em){
+#gallery .cs-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.875em;
+}
+}
+@media only screen and (min-width: 0em){
+#gallery .cs-row-1 .cs-picture1 {
+    width: 26.25em;
+    height: 35.4375em;
+}
+}
+@media only screen and (min-width: 0em){
+#gallery .cs-picture {
+    position: relative;
+    display: block;
+}
+}
+
+@media only screen and (min-width: 0em){
+#gallery .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+}
+@media only screen and (min-width: 0em){
+#gallery .cs-row-1 .cs-picture2 {
+    width: 26.25em;
+    height: 39.3125em;
+}
+}
+@media only screen and (min-width: 0em){
+#gallery .cs-row-1 .cs-picture3 {
+    width: 26.25em;
+    height: 32em;
+}
+}
+/* row 2 */
+@media only screen and (min-width: 0em){
+#gallery .cs-row-2 .cs-picture1 {
+    width: 26.25em;
+    height: 30.75em;
+}
+}
+@media only screen and (min-width: 0em){
+#gallery .cs-row-2 .cs-picture2 {
+    width: 26.25em;
+    height: 32.3125em;
+}
+}
+@media only screen and (min-width: 0em){
+#gallery .cs-row-2 .cs-picture3 {
+    width: 26.25em;
+    height: 39.3125em;
+}
+}
+@media only screen and (min-width: 0em){
+#gallery .cs-row-3 .cs-picture1 {
+    width: 26.25em;
+    height: 39.0625em;
+}
+}
+@media only screen and (min-width: 0em){
+#gallery .cs-row-3 .cs-picture2 {
+    width: 26.25em;
+    height: 28.25em;
+}
+}
+@media only screen and (min-width: 0em){
+#gallery .cs-row-3 .cs-picture3 {
+    width: 26.25em;
+    height: 39.3125em;
+}
+}
+@media only screen and (min-width: 0em){
+.cs-button-solid {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    width: auto;
+    line-height: 3.125em;
+    height: 3.125rem;
+    text-align: center;
+    padding: 0 1.875rem;
+    position: relative;
+    z-index: 1;
+    background-color: var(--primary);
+    color: #000;
+    transition: color .3s;
+    transition-delay: .1s;
+}
+}
+
+/* ============================================  */
+/*                  Get It Done                  */
+/* ============================================  */
+
+@media only screen and (min-width: 0em) {
+  #cta {
+      position:relative;
+      padding: 3.125rem 0
+  }
+
+  #cta:before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 100%;
+      background: #000;
+      opacity: .7;
+      top: 0;
+      left: 0;
+      z-index: -1
+  }
+
+  #cta .container {
+      text-align: center
+  }
+
+  #cta picture {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+  }
+
+  #cta picture img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover
+  }
+
+  #cta .title {
+      font-weight: 900;
+      font-size: min(9vw,3rem);
+      line-height: 58/48;
+      color: #fff;
+      position: relative;
+      margin-bottom: 2.25rem;
+      text-align: center;
+      z-index: 3;
+  }
+
+  #cta .cs-button-solid {
+    position: relative;
+    z-index: 3;
+  }
+
+  #cta p {
+      color: #fff;
+      text-align: center;
+      opacity: 1;
+      margin: auto;
+      margin-bottom: 2.25rem;
+      width: 96%;
+      position: relative;
+      max-width: 37.375rem;
+      z-index: 5;
+
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  #cta {
+      padding:10.5rem 0
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  #cta {
+      position:relative;
+      margin-top: 6.25rem
+  }
+
+  #cta:before {
+      display: none
+  }
+
+  #cta:after {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 69.25rem;
+      width: 125rem;
+      background: url("/assets/svgs/cta-squares.svg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 1;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -3
+  }
+
+  #cta .container {
+      width: 90.0625%;
+      margin: auto
+  }
+
+  #cta picture {
+      width: 90.0625%;
+      left: 50%;
+      transform: translateX(-50%)
+  }
+
+  #cta picture:before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 100%;
+      background: #000;
+      opacity: .7;
+      top: 0;
+      left: 0;
+      z-index: 1
+  }
+} 
+
 /* ============================================  */
 /*                  Footer                       */
 /* ============================================  */
 
 @media only screen and (min-width: 0em) {
   #footer {
-      background:#1c1c1c;
+      background:#061623;
       padding: 5.25rem 0 1.25rem;
       font-size: min(4vw,1.2em)
   }
@@ -1849,7 +2149,7 @@ main {
 /*                    ROOT                       */
 /* ============================================  */
 
-@media only screen and (min-width: 0em) {
+ @media only screen and (min-width: 0em) {
   :root {
       --primary: #ffba19;
       --primaryLight: #ffd675;
@@ -2697,7 +2997,7 @@ main {
       height: 25em;
       background-color: #fff;
       box-shadow: rgba(0,0,0,.1) 0px 0px 40px;
-      border: clamp(.375em,1.5vw,.75em) solid #fff;
+      border: clamp(.375em,1.5vw,.75em) solid var(--dark);
       right: 0;
       bottom: 0
   }
@@ -2730,7 +3030,7 @@ main {
 
   #sbs .cs-flex-group {
       padding: clamp(1rem,3vw,2rem);
-      background-color: #f7f7f7;
+      background-color: var(--accent);
       border-radius: 1rem;
       position: relative
   }
@@ -2739,7 +3039,7 @@ main {
       font-size: clamp(.875rem,1.5vw,1rem);
       line-height: 1.5em;
       margin: 0 0 1rem;
-      color: #353535
+      color: var(--bodyTextColorWhite)
   }
 
   #sbs .cs-name {
@@ -2748,15 +3048,15 @@ main {
       text-transform: uppercase;
       font-weight: bold;
       margin: 0 0 .25rem;
-      color: var(--headerColor);
-      display: block
+      color: var(--bodyTextColorWhite);
+      display: block;
   }
 
   #sbs .cs-job {
       font-size: .875rem;
       line-height: 1.5em;
-      color: #353535;
-      display: block
+      color: var(--bodyTextColorWhite);
+      display: block;
   }
 
   #sbs .cs-quote-icon {
@@ -2770,6 +3070,10 @@ main {
   #sbs .cs-button-solid {
       margin-top: 2rem
   }
+
+  #sbs .cs-quote-icon {
+    opacity: .2;
+}
 }
 
 @media only screen and (min-width: 64em) {
@@ -2789,122 +3093,371 @@ main {
   }
 }
 
+/* ============================================  */
+/*                    Reviews                    */
+/* ============================================  */
+
+@media only screen and (min-width: 48em) {
+#reviews {
+    padding-top: 9.375rem;
+    padding-bottom: 3.125rem;
+}
+}
 @media only screen and (min-width: 0em) {
-  #cta {
-      position:relative;
-      padding: 3.125rem 0
-  }
-
-  #cta:before {
-      content: "";
-      position: absolute;
-      display: block;
-      height: 100%;
-      width: 100%;
-      background: #000;
-      opacity: .7;
-      top: 0;
-      left: 0;
-      z-index: -1
-  }
-
-  #cta .container {
-      text-align: center
-  }
-
-  #cta picture {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      z-index: -2
-  }
-
-  #cta picture img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      object-fit: cover
-  }
-
-  #cta .title {
-      font-weight: 900;
-      font-size: min(9vw,3rem);
-      line-height: 58/48;
-      color: #fff;
-      position: relative;
-      margin-bottom: 2.25rem;
-      text-align: center
-  }
-
-  #cta p {
-      color: #fff;
-      text-align: center;
-      opacity: 1;
-      margin: auto;
-      margin-bottom: 2.25rem;
-      width: 96%;
-      max-width: 37.375rem
-  }
+#reviews {
+    padding-top: 7.5rem;
+    padding-bottom: 3.125rem;
+    margin: auto;
+}
+}
+@media only screen and (min-width: 48em) {
+#reviews .container {
+    font-size: min(1.4vw,1em);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    column-gap: 1.875rem;
+}
+}
+@media only screen and (min-width: 0em) {
+#reviews .container {
+    width: 96%;
+    max-width: 82.5rem;
+}
+}
+@media only screen and (min-width: 0em) {
+.container {
+    position: relative;
+    width: 92%;
+    margin: auto;
+}
+}
+@media only screen and (min-width: 0em) {
+#reviews .review {
+    background: var(--medium);
+}
+}
+@media only screen and (min-width: 48em) {
+#reviews .review {
+    margin: 0;
+    margin-bottom: 9.375rem;
+}
+}
+@media only screen and (min-width: 0em) {
+#reviews .review {
+    padding: 4rem 1.875rem 1.125rem 1.875rem;
+    box-shadow: 0px 20px 40px rgba(0,0,0,.05);
+    width: 100%;
+    max-width: 25.625rem;
+    margin: auto;
+    margin-bottom: 6.25rem;
+    border-radius: 0.3125rem;
+    position: relative;
+    background: var(--medium);
+    display: flex;
+    flex-direction: column;
+}
 }
 
-@media only screen and (min-width: 64em) {
-  #cta {
-      padding:10.5rem 0
-  }
+@media only screen and (min-width: 48em) {
+#reviews .container {
+    font-size: min(1.4vw,1em);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    column-gap: 1.875rem;
+}
+}
+@media only screen and (min-width: 0em) {
+#reviews .review .profile {
+    display: block;
+    height: 6.1875rem;
+    width: 6.1875rem;
+    margin-left: 0;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    position: absolute;
+    left: 1.875rem;
+    top: -3.1875rem;
+}
+}
+@media only screen and (min-width: 0em) {
+#reviews .review p {
+    line-height: 24/18;
+    margin-bottom: 1.75rem;
+    text-align: left;
+    color: var(--bodyTextColorWhite);
+}
+}
+@media only screen and (min-width: 0em) {
+#reviews .review .star-group {
+    border-top: 1px solid #e7e7e7;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: auto;
+}
+}
+@media only screen and (min-width: 0em) {
+ #reviews .review .name {
+    color: #fff;
+}
+}
+@media only screen and (min-width: 0em) {
+#reviews .review .star-group .name {
+    color: var(--bodyTextColorWhite);
+    line-height: 1.5rem;
+    text-align: left;
+    font-weight: bold;
+    display: block;
+}
 }
 
-@media only screen and (min-width: 1300px) {
-  #cta {
-      position:relative;
-      margin-top: 6.25rem
-  }
+#reviews .review .star-group .name {
+  color: var(--bodyTextColorWhite);
+  line-height: 1.5rem;
+  text-align: left;
+  font-weight: bold;
+  display: block;
+}
 
-  #cta:before {
-      display: none
-  }
+/* ============================================  */
+/*                    Contact                    */
+/* ============================================  */
 
-  #cta:after {
-      content: "";
-      position: absolute;
-      display: block;
-      height: 69.25rem;
-      width: 125rem;
-      background: url("/assets/svgs/cta-squares.svg");
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
-      opacity: 1;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: -3
-  }
+@media only screen and (min-width: 0em){
+#cs-contact {
+    font-family: "Roboto","Arial",sans-serif;
+    padding: var(--sectionPadding);
+}
+}
+@media only screen and (min-width: 64em){
+#cs-contact .cs-container {
+    max-width: 80rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 5rem;
+}
+}
+@media only screen and (min-width: 0em){
+#cs-contact .cs-container {
+    width: 100%;
+    max-width: 50rem;
+    margin: auto;
+}
+}
+@media only screen and (min-width: 81.25em){
+#cs-contact #cs-form {
+    column-gap: 0rem;
+}
+}
+@media only screen and (min-width: 64em){
+#cs-contact #cs-form {
+    max-width: 39.375rem;
+}
+}
+@media only screen and (min-width: 43.75em){
+#cs-contact #cs-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+}
+@media only screen and (min-width: 0em){
+#cs-contact #cs-form {
+    margin-bottom: 2.5rem;
+}
+}
+@media only screen and (min-width: 0em){
+#cs-contact .cs-content {
+    width: 100%;
+}
+}
 
-  #cta .container {
-      width: 90.0625%;
-      margin: auto
-  }
+@media only screen and (min-width: 0em){
+#cs-contact .cs-topper {
+    text-align: left;
+    margin-bottom: clamp(0.5rem,1.4vw,0.75rem);
+}
+}
 
-  #cta picture {
-      width: 90.0625%;
-      left: 50%;
-      transform: translateX(-50%)
-  }
+@media only screen and (min-width: 0em){
+#cs-contact .cs-title {
+    text-align: left;
+    max-width: 50rem;
+}
+}
 
-  #cta picture:before {
-      content: "";
-      position: absolute;
-      display: block;
-      height: 100%;
-      width: 100%;
-      background: #000;
-      opacity: .7;
-      top: 0;
-      left: 0;
-      z-index: 1
-  }
+@media only screen and (min-width: 0em){
+#cs-contact .cs-text {
+    text-align: left;
+    max-width: clamp(25.25rem,30vw,32.625rem);
+    margin: 0 auto 0 0;
+    margin-bottom: clamp(2.5rem,6.3vw,3rem);
+}
+}
+
+@media only screen and (min-width: 0em){
+#cs-contact .cs-text {
+    text-align: left;
+    max-width: clamp(25.25rem,30vw,32.625rem);
+    margin: 0 auto 0 0;
+    margin-bottom: clamp(2.5rem,6.3vw,3rem);
+}
+}
+@media only screen and (min-width: 0em){
+#cs-contact #cs-form label, body.dark-mode #cs-contact #cs-form input, body.dark-mode #cs-contact #cs-form textarea {
+    background-color: rgba(0,0,0,0);
+    color: var(--bodyTextColorWhite);
+}
+}
+@media only screen and (min-width: 81.25em){
+#cs-contact #cs-form label {
+    width: 48%;
+    max-width: 19.0625rem;
+}
+}
+@media only screen and (min-width: 64em){
+#cs-contact #cs-form label {
+    width: 100%;
+}
+}
+@media only screen and (min-width: 43.75em){
+#cs-contact #cs-form label {
+    width: 48%;
+}
+}
+@media only screen and (min-width: 0em){
+#cs-contact #cs-form label {
+    font-size: 1rem;
+    line-height: 1.5em;
+    font-weight: 700;
+    margin-bottom: clamp(0.75rem,1.3em,1.25rem);
+    color: var(--headerColor);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+}
+@media only screen and (min-width: 0em){
+#cs-contact #cs-form input, #cs-contact #cs-form textarea {
+    font-size: 1rem;
+    width: 100%;
+    height: 4rem;
+    margin-top: 0.25rem;
+    padding-left: 1.25rem;
+    border: 1px solid #b4b2c7;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    transition: border .3s;
+}
+}
+@media only screen and (min-width: 0em){
+#cs-contact #cs-form .cs-button-solid {
+    width: 100%;
+    border: none;
+}
+}
+
+@media only screen and (min-width: 81.25em){
+#cs-contact .cs-right-section {
+    height: 36.125rem;
+}
+}
+@media only screen and (min-width: 64em){
+#cs-contact .cs-right-section {
+    height: 42.875rem;
+    width: 40%;
+    max-width: 33.875rem;
+    flex: none;
+}
+}
+@media only screen and (min-width: 0em){
+#cs-contact .cs-right-section {
+    position: relative;
+    height: 20rem;
+    padding: clamp(1.5rem,3vw,2.5rem) clamp(1.25rem,3vw,2.5rem);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+}
+
+@media only screen and (min-width: 0em){
+#cs-contact .cs-header {
+    font-size: clamp(1rem,3vw,1.25rem);
+    line-height: 1.2em;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--bodyTextColorWhite);
+    display: block;
+}
+}
+@media only screen and (min-width: 0em){
+#cs-contact .cs-link {
+    font-size: clamp(1rem,3vw,1.25rem);
+    line-height: 1.2em;
+    text-decoration: none;
+    margin-bottom: 1.25rem;
+    color: var(--bodyTextColorWhite);
+    display: block;
+    position: relative;
+}
+}
+@media only screen and (min-width: 0em){
+#cs-contact .cs-link:before {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: currentColor;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    bottom: -0.125rem;
+    left: 0;
+    transition: width .3s;
+}
+}
+@media only screen and (min-width: 0em){
+#cs-contact .cs-header {
+    font-size: clamp(1rem,3vw,1.25rem);
+    line-height: 1.2em;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--bodyTextColorWhite);
+    display: block;
+}
+}
+@media only screen and (min-width: 0em){
+#cs-contact .cs-link:last-of-type {
+    margin-bottom: 0;
+}
+}
+
+@media only screen and (min-width: 0em){
+#cs-contact .cs-bg-picture {
+    background-color: #000;
+}
+}
+@media only screen and (min-width: 0em){
+#cs-contact .cs-bg-picture {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: transform .6s;
+}
 }

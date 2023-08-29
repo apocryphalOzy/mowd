@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script defer src="assets/main.js"></script>
+  
+  <title>boilerplate cuck number 2</title>
+</head>
+<body>
+  <header id="header" class="header">
+
+    <!-- NavBar -->
+    <nav class="navbar__container">
+
+      <!--Logo-->
+      <div class="nav__logo">Logo</div>
+      <div class="hamburger-menu"></div>
+
+      <!--Nav Links-->
+      <ul class="nav__list">
+        <li class="nav-item nav__main"><a href="./landing.html" class="nav__link nav__link__underline">Home</a></li>
+        <li class="nav-item nav__main"><a href="./aboutus.html" class="nav__link nav__link__underline">About Us</a></li>
+        <li class="nav-item nav__main"><a href="./projects-portfolio.html" class="nav__link nav__link__underline">Projects</a></li>
+        <li class="nav-item nav__main"><a href="./reviews-testimonials.html" class="nav__link nav__link__underline">Reviews</a></li>
+        <!-- <li class="nav-item nav__main"><a href="#" class="nav__link nav__link__underline">Blog</a></li> -->
+      </ul>
+
+      <!--Contact Us-->
+      <a href="#">
+        <button class="nav-item primary__button button__slide nav__main">Contact Us</button>
+      </a>
+
+      <!--Sun SVG Theme-->
+      <button class="nav__sun">
+        <svg class="sun__svg" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 43" width="27px" height="27px"><path fill="#FF9800" d="M11 11H37V37H11z"/><path fill="#FF9800" d="M11.272 11.272H36.728V36.728H11.272z" transform="rotate(-45.001 24 24)"/><path fill="#FFEB3B" d="M13,24c0,6.077,4.923,11,11,11c6.076,0,11-4.923,11-11s-4.924-11-11-11C17.923,13,13,17.923,13,24"/>
+        </svg>
+      </button>
+
+      <!--Hamburger Button-->
+      <input id="menu-toggle" type="checkbox">
+      <label class="menu-button-container" for="menu-toggle">
+      <div class="menu-button"></div>
+        <span></span>
+      </label>
+  
+      <!--Mobile Menu-->
+      <ul class="menu__box">
+        <li><a class="menu__item" href="./landing.html">Home</a></li>
+        <li><a class="menu__item" href="./aboutus.html">About Us</a></li>
+        <li><a class="menu__item" href="./projects-portfolio.html">Projects</a></li>
+        <li><a class="menu__item" href="./reviews-testimonials.html">Reviews</a></li>
+        <!-- <li><a class="menu__item" href="#">Blog</a></li> -->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+    <section id="int-hero">
+      <h1 id="home-h">Projects</h1>
+      <picture>
+        <source media="(max-width:600px )" srcset="https://d33wubrfki0l68.cloudfront.net/67f6cdea2924b29064b359646d6033358d4a743c/44999/assets/images/cabinets2-m.jpg">
+        <source media="(min-width:601px )" srcset="https://d33wubrfki0l68.cloudfront.net/assets/images/9c5d801ab59a0da474c21639ecdf1aef356825c3/cabinets2.jpg">
+        <img aria-hidden="true" decoding="async" src="https://d33wubrfki0l68.cloudfront.net/assets/images/9c5d801ab59a0da474c21639ecdf1aef356825c3/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+      </picture>
+    </section>
+  <!-- ============================================ -->
+  <!--                 Projects                     -->
+  <!-- ============================================ -->
+  <section id="gallery">
+    <div class="cs-container">
+      <!-- <span class="cs-topper">Our Portfolio</span> -->
+      <div class="cs-image-group">
+        <!-- Row 1-->
+        <div class="cs-row cs-row-1">
+          <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+          <picture class="cs-picture cs-picture1">
+            <source media="(max-width: 600px)" srcset="https://d33wubrfki0l68.cloudfront.net/6d474c27aa89e89c7a920a1ecd6815e7b933d871/49f3c/assets/images/portfolio/port1-m.jpg">
+            <source media="(min-width: 601px)" srcset="https://d33wubrfki0l68.cloudfront.net/7b2ac97aca953e660023c7226ce110524343b025/34da4/assets/images/portfolio/port1.jpg">
+            <img aria-hidden="true" decoding="async" src="https://d33wubrfki0l68.cloudfront.net/7b2ac97aca953e660023c7226ce110524343b025/34da4/assets/images/portfolio/port1.jpg" alt="new hallway" loading="lazy" width="400" height="560">
+          </picture>
+          <picture class="cs-picture cs-picture2">
+            <source media="(max-width: 600px)" srcset="https://d33wubrfki0l68.cloudfront.net/57b8ed2b550b3238955770e877a8ed5a1b4e876c/8e6a7/assets/images/portfolio/port4-m.jpg">
+            <source media="(min-width: 601px)" srcset="https://d33wubrfki0l68.cloudfront.net/b743db603cd25b66c7742bcb60745d7427b85b33/68d95/assets/images/portfolio/port4.jpg">
+            <img aria-hidden="true" decoding="async" src="https://d33wubrfki0l68.cloudfront.net/b743db603cd25b66c7742bcb60745d7427b85b33/68d95/assets/images/portfolio/port4.jpg" alt="new home construction" loading="lazy" width="400" height="560">
+          </picture>
+          <picture class="cs-picture cs-picture3">
+            <source media="(max-width: 600px)" srcset="https://d33wubrfki0l68.cloudfront.net/c3b4c51bec642f1971610f30f050c75415be1ceb/63a16/assets/images/portfolio/port7-m.jpg">
+            <source media="(min-width: 601px)" srcset="https://d33wubrfki0l68.cloudfront.net/82d4fefeccd6947c90e064280149eee04224a2e8/9e52d/assets/images/portfolio/port7.jpg">
+            <img aria-hidden="true" decoding="async" src="https://d33wubrfki0l68.cloudfront.net/82d4fefeccd6947c90e064280149eee04224a2e8/9e52d/assets/images/portfolio/port7.jpg" alt="building a new wall" loading="lazy" width="400" height="560">
+          </picture>
+        </div>
+        <!-- Row 2 -->
+        <div class="cs-row cs-row-2">
+          <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+          <picture class="cs-picture cs-picture1">
+            <source media="(max-width: 600px)" srcset="https://d33wubrfki0l68.cloudfront.net/05d864c72ce97de60684fa6e078527511d68e138/9bfd7/assets/images/portfolio/port2-m.jpg">
+            <source media="(min-width: 601px)" srcset="https://d33wubrfki0l68.cloudfront.net/4d4d87dd641ac56fbbf7727aa55e5b5dc391fb96/73c44/assets/images/portfolio/port2.jpg">
+            <img aria-hidden="true" decoding="async" src="https://d33wubrfki0l68.cloudfront.net/4d4d87dd641ac56fbbf7727aa55e5b5dc391fb96/73c44/assets/images/portfolio/port2.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
+          </picture>
+          <picture class="cs-picture cs-picture2">
+            <source media="(max-width: 600px)" srcset="https://d33wubrfki0l68.cloudfront.net/555ef9a5574a10937bfec123791db014d37defb4/e53c8/assets/images/portfolio/port5-m.jpg">
+            <source media="(min-width: 601px)" srcset="https://d33wubrfki0l68.cloudfront.net/7080a2808d17275bb8c00563f77e388d606ebf0b/9ffa7/assets/images/portfolio/port5.jpg">
+            <img aria-hidden="true" decoding="async" src="https://d33wubrfki0l68.cloudfront.net/7080a2808d17275bb8c00563f77e388d606ebf0b/9ffa7/assets/images/portfolio/port5.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
+          </picture>
+          <picture class="cs-picture cs-picture3">
+            <source media="(max-width: 600px)" srcset="https://d33wubrfki0l68.cloudfront.net/bfbceb7fb65e0af6dae7e00b11de4d34a83b5bc6/c699b/assets/images/portfolio/port8-m.jpg">
+            <source media="(min-width: 601px)" srcset="https://d33wubrfki0l68.cloudfront.net/390850a4bbd66ea41cfb250759171b3dc164c14e/d08a1/assets/images/portfolio/port8.jpg">
+            <img aria-hidden="true" decoding="async" src="https://d33wubrfki0l68.cloudfront.net/390850a4bbd66ea41cfb250759171b3dc164c14e/d08a1/assets/images/portfolio/port8.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
+          </picture>
+        </div>
+        <!-- Row 3 -->
+        <div class="cs-row cs-row-3">
+          <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+          <picture class="cs-picture cs-picture1">
+            <source media="(max-width: 600px)" srcset="https://d33wubrfki0l68.cloudfront.net/9d34d1fc9adb69a5c4e2b41ea81f8295e28b45eb/7aeb1/assets/images/portfolio/port3-m.jpg">
+            <source media="(min-width: 601px)" srcset="https://d33wubrfki0l68.cloudfront.net/ad62057ee35d80b6ee6bd8a0ec9ac5178bbff2eb/7c48c/assets/images/portfolio/port3.jpg">
+            <img aria-hidden="true" decoding="async" src="https://d33wubrfki0l68.cloudfront.net/ad62057ee35d80b6ee6bd8a0ec9ac5178bbff2eb/7c48c/assets/images/portfolio/port3.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
+          </picture>
+          <picture class="cs-picture cs-picture2">
+            <source media="(max-width: 600px)" srcset="https://d33wubrfki0l68.cloudfront.net/835a2789c36a1bba3f492af9ac8ff24176b5cd03/21b88/assets/images/portfolio/port6-m.jpg">
+            <source media="(min-width: 601px)" srcset="https://d33wubrfki0l68.cloudfront.net/b87af7f851dfb0fc27e6b5fd28382914e17cad1e/94438/assets/images/portfolio/port6.jpg">
+            <img aria-hidden="true" decoding="async" src="https://d33wubrfki0l68.cloudfront.net/b87af7f851dfb0fc27e6b5fd28382914e17cad1e/94438/assets/images/portfolio/port6.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
+          </picture>
+          <picture class="cs-picture cs-picture3">
+            <source media="(max-width: 600px)" srcset="https://d33wubrfki0l68.cloudfront.net/c15e455b49d1287308e278e2f6c7e86604c3cc70/8b9db/assets/images/portfolio/port9-m.jpg">
+            <source media="(min-width: 601px)" srcset="https://d33wubrfki0l68.cloudfront.net/16575d685c3de38671c148232e43752e2e793917/51a52/assets/images/portfolio/port9.jpg">
+            <img aria-hidden="true" decoding="async" src="https://d33wubrfki0l68.cloudfront.net/16575d685c3de38671c148232e43752e2e793917/51a52/assets/images/portfolio/port9.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
+          </picture>
+        </div>
+      </div>
+      <a href="/projects" class="cs-button-solid">View Full Gallery</a>
+    </div>
+</section>
+
+    <!-- ============================================ -->
+    <!--                 Get it Done                  -->
+    <!-- ============================================ -->
+    <section id="cta">
+      <div class="container">
+          <h2 class="title">
+              Get It Done
+              <br>
+              With Us Today
+          </h2>
+          <p>
+              Say something catchy, informative, and encouraging to click the button to go to the contact page. I like to add these to the bottom of all pages.
+          </p>
+          <a href="/contact" class="cs-button-solid">Get an Estimate Now</a>
+      </div>
+      <picture>
+        <source media="(max-width: 600px)" srcset="https://d33wubrfki0l68.cloudfront.net/67f6cdea2924b29064b359646d6033358d4a743c/44999/assets/images/cabinets2-m.jpg">
+        <source media="(min-width: 601px)" srcset="https://d33wubrfki0l68.cloudfront.net/assets/images/9c5d801ab59a0da474c21639ecdf1aef356825c3/cabinets2.jpg">
+        <img aria-hidden="true" decoding="async" src="https://d33wubrfki0l68.cloudfront.net/assets/images/9c5d801ab59a0da474c21639ecdf1aef356825c3/cabinets2.jpg" alt="kitchen cabinets" loading="lazy" width="2500" height="1667">
+      </picture>
+
+</section>
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+        <div class="left-section">
+            <!-- <a class="logo" href="/"><img loading="lazy" decoding="async" src="" alt="logo" width="264" height="78"></a> -->
+            <div class="nav__logo">Logo</div>
+  
+            <p>
+                Extra content if you need it, if not you can delete this whole p tag. I usually do.
+            </p>
+        </div>
+        <div class="right-section">
+            <div class="lists">
+                <ul>
+                    <li>
+                        <h2>Information</h2>
+                    </li>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="/testimonials">Reviews</a>
+                    </li>
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>Services</h2>
+                    </li>
+                    <li>Service1</li>
+                    <li>Service2</li>
+                    <li>Service4</li>
+                    <li>Service5</li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>Contact</h2>
+                    </li>
+                    <li>
+                        <a href="/contact">
+                            First Address Line<br>
+                            Second Address Line<br>
+                            Denver
+                            CO
+                            80206
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:555-779-4407">
+                            T:
+                            (555) 779-4407
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:help@codestitch.app">Click to Email</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  
+    <div class="credit">
+        <span>Designed and Hand Coded by</span>
+        <a href="/" target="_blank" rel="noopener">Your Company Name</a>
+        <span class="copyright">
+            Copyright 2023 - Present</span>
+    </div>
+  </footer>
+</body>
+</html>

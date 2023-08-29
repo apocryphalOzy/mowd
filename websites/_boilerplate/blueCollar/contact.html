@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script defer src="assets/main.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <header id="header" class="header">
+
+    <!-- NavBar -->
+    <nav class="navbar__container">
+
+      <!--Logo-->
+      <div class="nav__logo">Logo</div>
+      <div class="hamburger-menu"></div>
+
+      <!--Nav Links-->
+      <ul class="nav__list">
+        <li class="nav-item nav__main"><a href="./landing.html" class="nav__link nav__link__underline">Home</a></li>
+        <li class="nav-item nav__main"><a href="./aboutus.html" class="nav__link nav__link__underline">About Us</a></li>
+        <li class="nav-item nav__main"><a href="./projects-portfolio.html" class="nav__link nav__link__underline">Projects</a></li>
+        <li class="nav-item nav__main"><a href="./reviews-testimonials.html" class="nav__link nav__link__underline">Reviews</a></li>
+        <!-- <li class="nav-item nav__main"><a href="#" class="nav__link nav__link__underline">Blog</a></li> -->
+      </ul>
+
+      <!--Contact Us-->
+      <a href="./contact.html">
+        <button class="nav-item primary__button button__slide nav__main">Contact Us</button>
+      </a>
+
+      <!--Sun SVG Theme-->
+      <button class="nav__sun">
+        <svg class="sun__svg" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 43" width="27px" height="27px"><path fill="#FF9800" d="M11 11H37V37H11z"/><path fill="#FF9800" d="M11.272 11.272H36.728V36.728H11.272z" transform="rotate(-45.001 24 24)"/><path fill="#FFEB3B" d="M13,24c0,6.077,4.923,11,11,11c6.076,0,11-4.923,11-11s-4.924-11-11-11C17.923,13,13,17.923,13,24"/>
+        </svg>
+      </button>
+
+      <!--Hamburger Button-->
+      <input id="menu-toggle" type="checkbox">
+      <label class="menu-button-container" for="menu-toggle">
+      <div class="menu-button"></div>
+        <span></span>
+      </label>
+  
+      <!--Mobile Menu-->
+      <ul class="menu__box">
+        <li><a class="menu__item" href="./landing.html">Home</a></li>
+        <li><a class="menu__item" href="./aboutus.html">About Us</a></li>
+        <li><a class="menu__item" href="./projects-portfolio.html">Projects</a></li>
+        <li><a class="menu__item" href="./reviews-testimonials.html">Reviews</a></li>
+        <!-- <li><a class="menu__item" href="#">Blog</a></li> -->
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="int-hero">
+      <h1 id="home-h">Contact Us</h1>
+      <picture>
+          <source media="(max-width: 600px)" srcset="https://d33wubrfki0l68.cloudfront.net/67f6cdea2924b29064b359646d6033358d4a743c/44999/assets/images/cabinets2-m.jpg">
+          <source media="(min-width: 601px)" srcset="https://d33wubrfki0l68.cloudfront.net/assets/images/9c5d801ab59a0da474c21639ecdf1aef356825c3/cabinets2.jpg">
+          <img aria-hidden="true" decoding="async" src="https://d33wubrfki0l68.cloudfront.net/assets/images/9c5d801ab59a0da474c21639ecdf1aef356825c3/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+      </picture>
+  </section>
+
+  <section id="cs-contact">
+    <div class="cs-container">
+        <form id="cs-form" name="Contact Form" method="post">
+            <div class="cs-content">
+                <span class="cs-topper">Contact</span>
+                <h2 class="cs-title">Get in Touch</h2>
+                <p class="cs-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
+                </p>
+            </div>
+            <label>
+                Name
+                <input required="" type="text" id="name" name="name" placeholder="Name">
+            </label>
+            <label>
+                Email
+                <input required="" type="text" id="email" name="email" placeholder="Email">
+            </label>
+            <label>
+                Phone
+                <input required="" type="text" id="phone" name="phone" placeholder="Phone">
+            </label>
+            <label>
+                How Did You Find Us
+                <input type="text" id="find" name="find-us" placeholder="How did you find us?">
+            </label>
+            <label class="cs-label-message">
+                Message
+                <textarea required="" name="Message" id="message" placeholder="Write message..."></textarea>
+            </label>
+            <button class="cs-button-solid" type="submit">Submit Message</button>
+        </form>
+        <div class="cs-right-section">
+            <!--Email-->
+            <span class="cs-header">Email</span>
+            <a class="cs-link" href="mailto:help@codestitch.app">help@codestitch.app</a>
+            <!--Phone-->
+            <span class="cs-header">Phone</span>
+            <a class="cs-link" href="tel:555-779-4407">(555) 779-4407</a>
+            <!--Address-->
+            <span class="cs-header">Address</span>
+            <a class="cs-link" href="https://goo.gl/maps/UAQn4vuGDiwv7DV39">
+                First Address Line,
+                <br>
+                Second Address Line,
+                <br>
+                <span class="cs-block">
+                    Denver
+                    CO
+                    80206
+                </span>
+            </a>
+
+            <!-- Background Image-->
+            <picture class="cs-bg-picture">
+                <source media="(min-width: 601px)" srcset="https://d33wubrfki0l68.cloudfront.net/009c684762ebeab8e3046bf2653ca19346001efe/f8b8c/assets/images/skyscraper.jpg">
+                <img aria-hidden="true" decoding="async" src="https://d33wubrfki0l68.cloudfront.net/009c684762ebeab8e3046bf2653ca19346001efe/f8b8c/assets/images/skyscraper.jpg" alt="building" loading="lazy" width="2500" height="1667">
+            </picture>
+
+        </div>
+    </div>
+</section>
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+        <div class="left-section">
+            <!-- <a class="logo" href="/"><img loading="lazy" decoding="async" src="" alt="logo" width="264" height="78"></a> -->
+            <div class="nav__logo">Logo</div>
+  
+            <p>
+                Extra content if you need it, if not you can delete this whole p tag. I usually do.
+            </p>
+        </div>
+        <div class="right-section">
+            <div class="lists">
+                <ul>
+                    <li>
+                        <h2>Information</h2>
+                    </li>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="/testimonials">Reviews</a>
+                    </li>
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>Services</h2>
+                    </li>
+                    <li>Service1</li>
+                    <li>Service2</li>
+                    <li>Service4</li>
+                    <li>Service5</li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>Contact</h2>
+                    </li>
+                    <li>
+                        <a href="/contact">
+                            First Address Line<br>
+                            Second Address Line<br>
+                            Denver
+                            CO
+                            80206
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:555-779-4407">
+                            T:
+                            (555) 779-4407
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:help@codestitch.app">Click to Email</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  
+    <div class="credit">
+        <span>Designed and Hand Coded by</span>
+        <a href="/" target="_blank" rel="noopener">Your Company Name</a>
+        <span class="copyright">
+            Copyright 2023 - Present</span>
+    </div>
+  </footer>
+  
+</body>
+</html>
