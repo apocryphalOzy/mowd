@@ -1,0 +1,676 @@
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    /* banner start  */
+
+    .banner {
+        background-color: #0D0D22;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    }
+
+    .navbar-brand img {
+        width: 120px !important;
+    }
+
+    .banner-content {
+        text-align: center;
+        padding: 80px 0 40px 0;
+    }
+
+    .banner h1 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .banner p {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .User_option {
+        margin-right: 70px;
+    }
+
+    .header_section .container {
+        padding: 0;
+    }
+
+    /* banner end  */
+
+    /* offer start  */
+
+    .offer {
+        padding: 50px 0;
+    }
+
+
+    .offer .title-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .circle-bluish {
+        right: 50px;
+    }
+
+    .offer .title {
+        text-align: center;
+    }
+
+    .single-offer h2 {
+        margin: 22px 0;
+        font-size: 24px;
+    }
+
+    .single-offer p {
+        font-size: 16px;
+    }
+
+    /* offer end  */
+    /* Design start  */
+
+    .design {
+        padding: 40px 0;
+    }
+
+    .design .title-wrapper {
+        margin-bottom: 40px;
+    }
+
+    .design .title {
+        text-align: center;
+    }
+
+    /* Design end  */
+
+    /* ongoin-update start  */
+    .ongoin-update {
+        clip-path: polygon(0 0, 100% 6%, 100% 94%, 0% 100%);
+        padding: 70px 0 150px 0;
+    }
+
+    .single-ongoing-update h2 {
+        margin-top: 20px;
+    }
+
+    /* ongoin-update end  */
+
+    /* quality quantity start  */
+
+    .quality-quantity {
+        margin-top: -110px;
+    }
+
+    .quality-quantity .spacer {
+        margin-top: 50px;
+    }
+
+    .quality-quantity h1 {
+        font-size: 34px;
+    }
+
+    .quality-quantity h2 {
+        font-size: 16px;
+    }
+
+    .thumb-men {
+        bottom: 0;
+        left: 0;
+    }
+
+    .thumb-men img {
+        width: 300px;
+    }
+
+    /* quality quantity end  */
+
+    /* testimonial start  */
+
+    .testimonial {
+        padding: 50px 0;
+    }
+
+    .testimonial h1 {
+        font-size: 26px;
+    }
+
+    .testimonial img {
+        margin-top: 30px;
+        margin-bottom: 10px !important;
+    }
+
+    .testimonial p {
+        font-family: 'Karla', sans-serif;
+        font-size: 20px;
+        color: #0D0C22;
+        line-height: 30px;
+    }
+
+    .testimonial h2 {
+        font-family: 'Karla', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        color: #242f51;
+    }
+
+    .testimonial h3 {
+        color: #000000cc;
+        font-family: 'Karla', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .carousel-control-prev {
+        left: 70%;
+    }
+
+    .counter {
+        font-family: 'Karla', sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+    .suffix-cc {
+        font-family: 'Karla', sans-serif;
+        font-weight: 700;
+        color: #000;
+        font-size: 40px;
+    }
+
+    .count-desc {
+        color: #41404080 !important;
+        font-size: 18px !important;
+        font-weight: 500 !important;
+        margin-bottom: 0 !important;
+    }
+
+    /* testimonial end  */
+    /* pricing start  */
+
+    .pricing {
+        clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 100%);
+        padding: 100px 0;
+        background-color: #111029;
+    }
+
+    .pricing .title-wrapper {
+        text-align: center;
+    }
+
+    /* pricing end  */
+    /* contact start  */
+
+    .contact {
+        padding: 50px 0;
+    }
+
+
+    .contact h2 {
+        font-size: 22px;
+    }
+
+    /* contact end  */
+
+    footer{
+        text-align: center;
+        padding: 50px 0 20px 0;
+    }
+
+    footer hr {
+        padding: 0.5px 0;
+        background-color: #fff;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* banner start  */
+
+    .banner {
+        background-color: #0D0D22;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    }
+
+    .banner-content {
+        text-align: center;
+        padding: 70px 0 40px 0;
+    }
+
+    .banner h1 {
+        font-size: 55px;
+        line-height: 70px;
+    }
+
+    .banner p {
+        margin-bottom: 30px;
+    }
+
+    /* banner end  */
+
+
+    /* offer start  */
+
+    .offer {
+        padding: 60px 0;
+    }
+
+
+    .offer .title-wrapper {
+        margin-bottom: 40px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .circle-bluish {
+        right: 50px;
+    }
+
+    .offer .title {
+        text-align: center;
+    }
+
+    .single-offer h2 {
+        margin: 22px 0;
+        font-size: 34px;
+    }
+
+    .single-offer p {
+        font-size: 16px;
+    }
+
+    /* offer end  */
+    /* Design start  */
+
+    .design {
+        padding: 40px 0;
+    }
+
+    .design .title-wrapper {
+        margin-bottom: 40px;
+    }
+
+    .design .title {
+        text-align: center;
+    }
+
+    /* Design end  */
+
+    /* ongoin-update start  */
+    .ongoin-update {
+        padding: 100px 0;
+    }
+
+    /* ongoin-update end  */
+
+
+    /* quality quantity start  */
+    .quality-quantity {
+        margin-top: -90px;
+        clip-path: polygon(0 6%, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .quality-quantity .spacer {
+        margin-top: 50px;
+    }
+
+    .quality-quantity h1 {
+        font-size: 34px;
+    }
+
+    .quality-quantity h2 {
+        font-size: 16px;
+    }
+
+    .thumb-men {
+        bottom: 0;
+        left: 0;
+    }
+
+    .thumb-men img {
+        width: 300px;
+    }
+
+    /* quality quantity end  */
+
+    /* testimonial start  */
+
+    .testimonial {
+        padding: 60px 0;
+    }
+
+    .testimonial h1 {
+        font-size: 36px;
+    }
+
+    .testimonial img {
+        margin-top: 30px;
+        margin-bottom: 10px !important;
+    }
+
+    .testimonial p {
+        font-family: 'Karla', sans-serif;
+        font-size: 24px;
+        color: #0D0C22;
+        line-height: 36px;
+    }
+
+    .testimonial h2 {
+        font-family: 'Karla', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        color: #242f51;
+    }
+
+    .testimonial h3 {
+        color: #000000cc;
+        font-family: 'Karla', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .counter {
+        font-family: 'Karla', sans-serif;
+        font-weight: 700;
+        font-size: 75px;
+    }
+
+    .suffix-cc {
+        font-family: 'Karla', sans-serif;
+        font-weight: 700;
+        color: #000;
+        font-size: 75px;
+    }
+
+    .count-desc {
+        color: #41404080 !important;
+        font-size: 24px !important;
+        font-weight: 500 !important;
+    }
+
+    /* testimonial end  */
+
+
+    /* pricing start  */
+
+    .pricing {
+        clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+        padding: 100px 0;
+        background-color: #111029;
+    }
+
+    .pricing .title-wrapper {
+        text-align: center;
+    }
+
+    /* pricing end  */
+    footer hr {
+        padding: 0.5px 0;
+        background-color: #fff;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* banner start  */
+
+    .banner {
+        background-color: #0D0D22;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    }
+
+    .banner-content {
+        text-align: center;
+        padding: 70px 0 40px 0;
+    }
+
+    .banner h1 {
+        font-size: 55px;
+        line-height: 70px;
+    }
+
+    .banner p {
+        margin-bottom: 30px;
+    }
+
+    /* banner end  */
+
+    /* offer start  */
+
+    .offer {
+        padding: 70px 0;
+    }
+
+    .offer .title-wrapper {
+        margin-bottom: 40px;
+    }
+
+    .circle-bluish {
+        right: 50px;
+    }
+
+    .offer .title {
+        text-align: center;
+    }
+
+    .single-offer h2 {
+        margin: 22px 0;
+        font-size: 34px;
+    }
+
+    .single-offer p {
+        font-size: 16px;
+    }
+
+    /* offer end  */
+
+    /* Design start  */
+
+    .design {
+        padding: 40px 0;
+    }
+
+    .design .title-wrapper {
+        margin-bottom: 40px;
+    }
+
+    .design .title {
+        text-align: center;
+    }
+
+    /* Design end  */
+
+    /* ongoin-update start  */
+    .ongoin-update {
+        padding: 120px 0;
+    }
+
+    /* ongoin-update end  */
+
+    /* quality quantity start  */
+    .quality-quantity {
+        margin-top: -100px;
+        clip-path: polygon(0 11%, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .quality-quantity .spacer {
+        margin-top: 50px;
+    }
+
+    .quality-quantity h1 {
+        font-size: 34px;
+    }
+
+    .quality-quantity h2 {
+        font-size: 16px;
+    }
+
+    /* quality quantity end  */
+    /* testimonial start  */
+
+    .testimonial {
+        padding: 80px 0;
+    }
+
+    .testimonial h1 {
+        font-size: 36px;
+    }
+
+    .testimonial img {
+        margin-top: 30px;
+        margin-bottom: 10px !important;
+    }
+
+    .testimonial p {
+        font-family: 'Karla', sans-serif;
+        font-size: 24px;
+        color: #0D0C22;
+        line-height: 36px;
+    }
+
+    .testimonial h2 {
+        font-family: 'Karla', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        color: #242f51;
+    }
+
+    .testimonial h3 {
+        color: #000000cc;
+        font-family: 'Karla', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .counter {
+        font-family: 'Karla', sans-serif;
+        font-weight: 700;
+        font-size: 75px;
+    }
+
+    .suffix-cc {
+        font-family: 'Karla', sans-serif;
+        font-weight: 700;
+        color: #000;
+        font-size: 75px;
+    }
+
+    .count-desc {
+        color: #41404080 !important;
+        font-size: 24px !important;
+        font-weight: 500 !important;
+    }
+
+    /* testimonial end  */
+
+    /* pricing start  */
+
+    .pricing {
+        clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+        padding: 100px 0;
+        background-color: #111029;
+    }
+
+    .pricing .title-wrapper {
+        text-align: center;
+    }
+
+    /* pricing end  */
+
+    footer hr {
+        padding: 0.5px 0;
+        background-color: #fff;
+    }
+
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    /* banner start  */
+    .banner h1 {
+        font-size: 65px;
+        line-height: 80px;
+    }
+
+    /* banner end  */
+
+    /* offer start  */
+
+    .circle-bluish {
+        right: 100px;
+    }
+
+    .single-offer h2 {
+        margin: 22px 0;
+        font-size: 24px;
+    }
+
+    .single-offer p {
+        font-size: 16px;
+    }
+
+    /* offer end  */
+
+    /* testimonial start  */
+
+    .testimonial h1 {
+        font-size: 36px;
+    }
+
+    .testimonial img {
+        margin-bottom: 10px !important;
+    }
+
+    .testimonial p {
+        font-family: 'Karla', sans-serif;
+        font-size: 18px;
+        color: #0D0C22;
+        line-height: 28px;
+    }
+
+    .testimonial h2 {
+        font-family: 'Karla', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        color: #242f51;
+    }
+
+    .testimonial h3 {
+        color: #000000cc;
+        font-family: 'Karla', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .counter {
+        font-family: 'Karla', sans-serif;
+        font-weight: 700;
+        font-size: 50px;
+    }
+
+    .suffix-cc {
+        font-family: 'Karla', sans-serif;
+        font-weight: 700;
+        color: #000;
+        font-size: 50px;
+    }
+
+    .count-desc {
+        color: #41404080 !important;
+        font-size: 20px !important;
+        font-weight: 500 !important;
+    }
+
+    /* testimonial end  */
+}
+
+/*X large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 1399.98px) {}
+
+/*XX Large devices (large desktops, 1400px and up)*/
+@media (min-width: 1400px) {}
